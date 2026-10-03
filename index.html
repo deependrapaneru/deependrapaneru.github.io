@@ -2,17 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Deependra Paneru, PhD — Poultry Nutrition &amp; Health Researcher</title>
-<meta name="description" content="Deependra Paneru, PhD — poultry nutrition and health researcher at the University of Georgia studying intestinal integrity, skeletal biology, mycotoxicology, and the gut microbiome." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<script>document.documentElement.classList.add("js");</script>
+<title>Deependra Paneru, PhD — Postdoctoral Research Associate, Poultry Science</title>
+<meta name="description" content="Deependra Paneru, PhD — postdoctoral research associate in poultry nutrition and health at the University of Georgia, studying intestinal integrity, skeletal biology, mycotoxicology, and the gut microbiome." />
 <meta name="author" content="Deependra Paneru" />
+<meta name="color-scheme" content="light dark" />
+<meta name="theme-color" content="#F6F5F2" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0C0D10" media="(prefers-color-scheme: dark)" />
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Deependra Paneru, PhD — Poultry Nutrition & Health Researcher" />
+<meta property="og:title" content="Deependra Paneru, PhD — Postdoctoral Research Associate, Poultry Science" />
 <meta property="og:description" content="Intestinal integrity, skeletal biology, mycotoxicology, and the gut microbiome. University of Georgia." />
-<meta property="og:image" content="./img/hero-layerhouse.jpg" />
+<meta property="og:image" content="https://deependrapaneru.me/img/hero-layerhouse.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%239C2B27'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='white' text-anchor='middle'%3EDP%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23B0251F'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='white' text-anchor='middle'%3EDP%3C/text%3E%3C/svg%3E" />
 
 <script type="application/ld+json">
 {
@@ -20,7 +25,8 @@
   "@type": "Person",
   "name": "Deependra Paneru",
   "honorificSuffix": "PhD",
-  "jobTitle": "Poultry Nutrition & Health Researcher",
+  "jobTitle": "Postdoctoral Research Associate",
+  "url": "https://deependrapaneru.me",
   "affiliation": { "@type": "Organization", "name": "University of Georgia, Department of Poultry Science" },
   "email": "mailto:dpaneru@uga.edu",
   "sameAs": [
@@ -37,506 +43,516 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
 <style>
+  /* ============ Tokens — light first, follows the device setting ============ */
   :root {
-    --paper: #FAF6EF;
-    --ink: #201C16;
-    --muted: #6B6255;
-    --faint: #9A917F;
-    --line: #E7DFD1;
-    --accent: #A5322C;
-    --accent-ink: #8A2621;
-    --accent-2: #3F7A5D;
-    --accent-3: #C98A2B;
+    --paper: #F6F5F2;
+    --surface: #FFFFFF;
+    --surface-2: #FBFAF8;
+    --ink: #101217;
+    --muted: #4C5461;
+    --faint: #737C89;
+    --line: #E3E1DB;
+    --accent: #B0251F;
+    --accent-ink: #8E1D18;
+    --accent-soft: rgba(176,37,31,0.08);
+    --teal: #0F766E;
+    --amber: #B7791F;
 
-    --glass-bg: rgba(255,255,255,0.58);
-    --glass-bg-soft: rgba(255,255,255,0.4);
-    --glass-bg-strong: rgba(255,255,255,0.8);
-    --glass-border: rgba(255,255,255,0.7);
-    --glass-shadow: 0 10px 34px rgba(60,45,25,0.10), 0 2px 8px rgba(60,45,25,0.05);
-    --glass-shadow-lift: 0 26px 64px rgba(60,45,25,0.16), 0 4px 16px rgba(60,45,25,0.08);
-    --blur: 22px;
+    --nav-bg: rgba(255,255,255,0.72);
+    --nav-border: rgba(255,255,255,0.8);
+    --shadow-sm: 0 1px 2px rgba(16,18,23,0.05), 0 4px 14px rgba(16,18,23,0.05);
+    --shadow: 0 2px 6px rgba(16,18,23,0.05), 0 18px 44px rgba(16,18,23,0.09);
+    --shadow-lift: 0 4px 10px rgba(16,18,23,0.07), 0 28px 60px rgba(16,18,23,0.15);
 
     --display: "Bricolage Grotesque", system-ui, sans-serif;
     --body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
     --mono: "Space Mono", ui-monospace, "SFMono-Regular", monospace;
-    --sidebar: 268px;
+    --maxw: 1180px;
+    --r: 22px;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --paper: #171310;
-      --ink: #F1ECE3;
-      --muted: #B3A99A;
-      --faint: #7C7364;
-      --line: #34291F;
-      --accent: #E3776E;
-      --accent-ink: #EF9891;
-      --accent-2: #6FC79A;
-      --accent-3: #E3AE5C;
+      --paper: #0C0D10;
+      --surface: #15171C;
+      --surface-2: #111317;
+      --ink: #F2F3F5;
+      --muted: #A9B0BB;
+      --faint: #7D8592;
+      --line: #252932;
+      --accent: #F0766C;
+      --accent-ink: #F59A92;
+      --accent-soft: rgba(240,118,108,0.12);
+      --teal: #4FD1C5;
+      --amber: #E3AE5C;
 
-      --glass-bg: rgba(34,28,22,0.55);
-      --glass-bg-soft: rgba(34,28,22,0.38);
-      --glass-bg-strong: rgba(24,19,15,0.8);
-      --glass-border: rgba(255,255,255,0.10);
-      --glass-shadow: 0 10px 34px rgba(0,0,0,0.42), 0 2px 12px rgba(0,0,0,0.3);
-      --glass-shadow-lift: 0 30px 68px rgba(0,0,0,0.55), 0 4px 18px rgba(0,0,0,0.4);
+      --nav-bg: rgba(21,23,28,0.7);
+      --nav-border: rgba(255,255,255,0.09);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.4), 0 4px 14px rgba(0,0,0,0.3);
+      --shadow: 0 2px 6px rgba(0,0,0,0.4), 0 18px 44px rgba(0,0,0,0.4);
+      --shadow-lift: 0 4px 10px rgba(0,0,0,0.5), 0 28px 60px rgba(0,0,0,0.55);
     }
   }
 
+  /* ============ Base ============ */
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  html { scroll-behavior: smooth; scroll-padding-top: 92px; -webkit-text-size-adjust: 100%; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   body {
     font-family: var(--body); background: var(--paper); color: var(--ink);
-    line-height: 1.6; font-size: 16.5px; -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility; overflow-x: hidden; position: relative;
-  }
-  .mesh-bg {
-    position: fixed; inset: -12%; z-index: -3; pointer-events: none;
-    background:
-      radial-gradient(36% 30% at 8% 4%,   color-mix(in srgb, var(--accent) 22%, transparent), transparent 70%),
-      radial-gradient(40% 34% at 94% 10%, color-mix(in srgb, var(--accent-3) 24%, transparent), transparent 70%),
-      radial-gradient(46% 40% at 15% 96%, color-mix(in srgb, var(--accent-2) 22%, transparent), transparent 70%),
-      radial-gradient(42% 36% at 92% 94%, color-mix(in srgb, var(--accent) 15%, transparent), transparent 70%);
-    filter: blur(56px) saturate(140%);
+    line-height: 1.62; font-size: 16.5px; -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; overflow-x: hidden;
   }
   ::selection { background: var(--accent); color: #fff; }
   img { display: block; max-width: 100%; }
   a { color: var(--accent-ink); text-decoration: none; }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(18px, 4vw, 36px); }
+  section { padding: clamp(56px, 8vw, 104px) 0; }
 
   .eyebrow {
-    font-family: var(--mono); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
-    color: var(--muted); display: flex; align-items: center; gap: 11px; margin-bottom: 18px;
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--muted); display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
   }
-  .eyebrow::before { content: ""; width: 16px; height: 2px; background: var(--accent); display: inline-block; flex: none; }
-  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.7rem, 3.2vw, 2.5rem); line-height: 1.06; letter-spacing: -0.02em; }
-  .section-lede { color: var(--muted); max-width: 60ch; margin-top: 14px; font-size: 1.02rem; }
-
-  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1); }
-  .reveal.in { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
-
-  .cap {
-    font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; color: var(--faint);
-    text-transform: uppercase; display: flex; align-items: center; gap: 8px;
+  .eyebrow .n { color: var(--accent); font-weight: 700; }
+  .eyebrow::after { content: ""; height: 1px; width: 44px; background: var(--line); }
+  h2 {
+    font-family: var(--display); font-weight: 700; font-size: clamp(2rem, 4.4vw, 3.3rem);
+    line-height: 1.02; letter-spacing: -0.03em; max-width: 18ch;
   }
+  .lede { color: var(--muted); max-width: 58ch; margin-top: 18px; font-size: 1.06rem; }
+
+  /* reveal only when JS is running, so content never stays hidden */
+  .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1); }
+  .js .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .js .reveal { opacity: 1; transform: none; transition: none; } }
+
+  .cap { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; color: var(--faint); text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
   .cap::before { content: ""; width: 9px; height: 2px; background: var(--accent); flex: none; }
 
-  .card {
-    background: var(--glass-bg); backdrop-filter: blur(var(--blur)) saturate(160%);
-    -webkit-backdrop-filter: blur(var(--blur)) saturate(160%);
-    border: 1px solid var(--glass-border); border-radius: clamp(18px, 2.4vw, 28px);
-    box-shadow: var(--glass-shadow); padding: clamp(28px, 4vw, 48px);
+  a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+  /* ============ Nav (glass pill) ============ */
+  header.nav { position: fixed; top: 14px; left: 0; right: 0; z-index: 80; display: flex; justify-content: center; padding: 0 14px; pointer-events: none; }
+  .nav-pill {
+    pointer-events: auto; width: 100%; max-width: 940px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 8px 8px 8px 14px; border-radius: 999px; background: var(--nav-bg); border: 1px solid var(--nav-border);
+    backdrop-filter: blur(22px) saturate(180%); -webkit-backdrop-filter: blur(22px) saturate(180%);
+    box-shadow: var(--shadow); transition: box-shadow .3s ease;
+  }
+  header.nav.scrolled .nav-pill { box-shadow: var(--shadow-lift); }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); }
+  .brand .dp { width: 30px; height: 30px; border-radius: 9px; background: var(--accent); color: #fff; font-family: var(--display); font-weight: 700; font-size: 13px; display: grid; place-items: center; flex: none; }
+  .brand .who { font-family: var(--display); font-weight: 600; font-size: 15px; letter-spacing: -0.01em; white-space: nowrap; }
+  .nav-links { display: flex; align-items: center; gap: 2px; }
+  .nav-links a { color: var(--muted); font-size: 13.5px; font-weight: 500; padding: 7px 12px; border-radius: 999px; transition: color .2s ease, background .2s ease; }
+  .nav-links a:hover { color: var(--ink); background: var(--accent-soft); }
+  .nav-links a[aria-current="true"] { color: var(--accent-ink); background: var(--accent-soft); }
+  .nav-cv { color: #fff !important; background: var(--accent) !important; font-weight: 600 !important; margin-left: 6px; }
+  .nav-cv:hover { background: var(--accent-ink) !important; }
+  @media (max-width: 860px) { .nav-links a:not(.nav-cv) { display: none; } }
+
+  /* ============ HERO (full-bleed photo + glass panel) ============ */
+  .hero { position: relative; isolation: isolate; min-height: clamp(640px, 94vh, 920px); display: flex; align-items: flex-end; padding: 120px 0 clamp(88px, 11vw, 132px); background: #14110f; border-radius: 0 0 clamp(28px, 4.5vw, 56px) clamp(28px, 4.5vw, 56px); overflow: hidden; }
+  .hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 74% 20%; z-index: -2; }
+  .hero__scrim { position: absolute; inset: 0; z-index: -1; background: linear-gradient(to top, rgba(8,7,6,0.82) 0%, rgba(8,7,6,0.42) 38%, rgba(8,7,6,0.06) 70%), linear-gradient(to right, rgba(8,7,6,0.62) 0%, rgba(8,7,6,0.1) 52%, rgba(8,7,6,0) 75%); }
+  .hero-in { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; }
+  .hero-copy { max-width: 700px; padding: clamp(24px, 3.6vw, 42px); border-radius: clamp(22px, 3vw, 32px); background: rgba(14,12,10,0.36); border: 1px solid rgba(255,255,255,0.16); backdrop-filter: blur(24px) saturate(150%); -webkit-backdrop-filter: blur(24px) saturate(150%); box-shadow: 0 30px 80px rgba(0,0,0,0.4); }
+  .hero .eyebrow { color: rgba(255,255,255,0.8); margin-bottom: 20px; }
+  .hero .eyebrow::after { background: rgba(255,255,255,0.3); }
+  .hero h1 { font-family: var(--display); font-weight: 800; color: #fff; font-size: clamp(2.9rem, 7.4vw, 5.8rem); line-height: 0.92; letter-spacing: -0.04em; margin-bottom: 18px; }
+  .hero .role { color: #fff; font-size: clamp(1.02rem, 2vw, 1.28rem); font-weight: 600; letter-spacing: -0.01em; }
+  .hero .role span { color: rgba(255,255,255,0.7); font-weight: 400; }
+  .hero .tagline { color: rgba(255,255,255,0.84); max-width: 52ch; margin: 12px 0 26px; font-size: clamp(0.98rem, 1.5vw, 1.06rem); }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 999px; font-size: 14px; font-weight: 600; color: #fff; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+  .btn svg { width: 16px; height: 16px; flex: none; }
+  .btn:hover { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.55); transform: translateY(-2px); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); }
+  .btn.primary:hover { background: var(--accent-ink); border-color: var(--accent-ink); }
+  .hero-cap { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.65); white-space: nowrap; padding-bottom: 6px; }
+  @media (max-width: 880px) {
+    .hero { align-items: flex-end; padding-top: 96px; }
+    .hero-in { flex-direction: column; align-items: flex-start; }
+    .hero-cap { order: -1; }
+    .hero__img { object-position: 70% 12%; }
+  }
+  @media (max-width: 560px) {
+    .hero { min-height: 0; height: 100svh; max-height: 760px; padding: 0 0 92px; }
+    .hero__img { object-position: 66% 0%; }
+    .hero-cap, .hero .tagline { display: none; }
+    .hero .eyebrow { margin-bottom: 14px; }
+    .hero h1 { font-size: 2.7rem; margin-bottom: 12px; }
+    .hero .actions { margin-top: 18px; }
+    .hero .role { margin-bottom: 0; }
   }
 
-  /* ============ Layout shell: fixed sidebar (desktop) + scrolling content ============ */
-  .shell { display: flex; min-height: 100vh; }
-  .content { flex: 1; min-width: 0; padding: 24px clamp(18px, 4vw, 46px) 24px; max-width: 980px; margin: 0 auto; }
-  .content > section { padding: 20px 0; }
-  .content > section > .card { }
-
-  /* ============ Sidebar (desktop) ============ */
-  .sidebar {
-    width: var(--sidebar); flex: none; position: sticky; top: 0; align-self: flex-start; height: 100vh;
-    display: flex; flex-direction: column; padding: 28px 20px; gap: 26px;
-    background: var(--glass-bg-strong); backdrop-filter: blur(var(--blur)) saturate(170%);
-    -webkit-backdrop-filter: blur(var(--blur)) saturate(170%);
-    border-right: 1px solid var(--glass-border); box-shadow: var(--glass-shadow);
-  }
-  .sb-id { display: flex; align-items: center; gap: 11px; }
-  .sb-id .dp { width: 38px; height: 38px; border-radius: 10px; background: var(--accent); color: #fff; font-family: var(--display); font-weight: 700; font-size: 16px; display: grid; place-items: center; flex: none; }
-  .sb-id .name { font-family: var(--display); font-weight: 700; font-size: 15.5px; letter-spacing: -0.01em; line-height: 1.15; }
-  .sb-id .role { font-family: var(--mono); font-size: 10px; letter-spacing: 0.05em; color: var(--muted); text-transform: uppercase; margin-top: 2px; }
-  .sb-photo { border-radius: 16px; overflow: hidden; border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow); }
-  .sb-photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 25%; }
-  .sb-nav { display: flex; flex-direction: column; gap: 3px; flex: 1; }
-  .sb-nav a {
-    color: var(--muted); font-size: 13.5px; font-weight: 500; padding: 9px 12px; border-radius: 10px;
-    transition: background .2s ease, color .2s ease; display: flex; align-items: center; gap: 10px;
-  }
-  .sb-nav a svg { width: 15px; height: 15px; flex: none; opacity: .8; }
-  .sb-nav a:hover, .sb-nav a:focus-visible { background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--ink); }
-  .sb-cv {
-    color: #fff !important; background: var(--accent); border-radius: 12px; padding: 11px 14px;
-    font-size: 13.5px; font-weight: 600; text-align: center; transition: background .2s ease, transform .2s ease;
-  }
-  .sb-cv:hover { background: var(--accent-ink); transform: translateY(-1px); }
-  .sb-social { display: flex; gap: 8px; }
-  .sb-social a {
-    width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center;
-    background: var(--glass-bg-soft); border: 1px solid var(--glass-border); color: var(--muted);
-    transition: color .2s ease, background .2s ease;
-  }
-  .sb-social a svg { width: 15px; height: 15px; }
-  .sb-social a:hover { color: var(--accent-ink); background: var(--glass-bg); }
-  @media (max-width: 900px) { .sidebar { display: none; } }
-
-  /* ============ Mobile top bar ============ */
-  .topbar { display: none; position: sticky; top: 0; z-index: 60; align-items: center; justify-content: space-between; gap: 14px; padding: 12px 16px; background: var(--glass-bg-strong); backdrop-filter: blur(var(--blur)) saturate(170%); -webkit-backdrop-filter: blur(var(--blur)) saturate(170%); border-bottom: 1px solid var(--glass-border); }
-  .topbar .brand { display: flex; align-items: center; gap: 9px; color: var(--ink); font-weight: 600; }
-  .topbar .dp { width: 28px; height: 28px; border-radius: 8px; background: var(--accent); color: #fff; font-family: var(--display); font-weight: 700; font-size: 13px; display: grid; place-items: center; }
-  .topbar .who { font-family: var(--display); font-weight: 600; font-size: 14px; }
-  .topbar .tb-cv { color: #fff !important; background: var(--accent); border-radius: 999px; padding: 7px 14px; font-size: 12.5px; font-weight: 600; }
-  @media (max-width: 900px) { .topbar { display: flex; } .content { padding-top: 18px; } }
-
-  /* ============ Mobile bottom tab bar ============ */
-  .tabbar {
-    display: none; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 70;
-    padding: 8px 10px; border-radius: 999px; background: var(--glass-bg-strong);
-    backdrop-filter: blur(var(--blur)) saturate(170%); -webkit-backdrop-filter: blur(var(--blur)) saturate(170%);
-    border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow-lift);
-    justify-content: space-between; align-items: center; padding-bottom: max(8px, env(safe-area-inset-bottom));
-  }
-  .tabbar a { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; color: var(--muted); font-family: var(--mono); font-size: 9.2px; letter-spacing: 0.03em; text-transform: uppercase; padding: 4px 2px; border-radius: 14px; transition: color .2s ease, background .2s ease; }
-  .tabbar a svg { width: 18px; height: 18px; }
-  .tabbar a:hover, .tabbar a:focus-visible { color: var(--accent-ink); background: color-mix(in srgb, var(--accent) 10%, transparent); }
-  @media (max-width: 900px) { .tabbar { display: flex; } .content { padding-bottom: 92px; } }
-
-  /* ============ HERO (split card, no full-bleed photo) ============ */
-  .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: clamp(24px, 4vw, 44px); align-items: center; }
-  .hero h1 { font-family: var(--display); font-weight: 800; font-size: clamp(2.1rem, 4.6vw, 3.4rem); line-height: 1; letter-spacing: -0.03em; margin-bottom: 14px; }
-  .hero .role { font-size: clamp(1.02rem, 1.8vw, 1.2rem); font-weight: 600; color: var(--ink); margin-bottom: 6px; }
-  .hero .role .at { color: var(--muted); font-weight: 400; }
-  .hero .lede { color: var(--muted); max-width: 52ch; margin: 12px 0 24px; font-size: 1rem; }
-  .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-  .hero-actions a {
-    display: inline-flex; align-items: center; gap: 8px; padding: 10px 17px; border-radius: 999px;
-    font-size: 13.5px; font-weight: 600; color: var(--ink); border: 1px solid var(--glass-border);
-    background: var(--glass-bg-soft); transition: background .2s ease, transform .2s ease, border-color .2s ease;
-  }
-  .hero-actions a svg { width: 15px; height: 15px; }
-  .hero-actions a:hover { background: var(--glass-bg); transform: translateY(-1px); border-color: var(--accent); }
-  .hero-actions a.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-  .hero-actions a.primary:hover { background: var(--accent-ink); border-color: var(--accent-ink); }
-  .hero-figure { position: relative; padding: 8px; background: var(--glass-bg-soft); border: 1px solid var(--glass-border); border-radius: 24px; box-shadow: var(--glass-shadow); }
-  .hero-figure img { width: 100%; border-radius: 18px; aspect-ratio: 4/5; object-fit: cover; object-position: 65% 22%; }
-  @media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; } .hero-figure { order: -1; max-width: 280px; margin: 0 auto; } }
-
-  .facts-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 30px; border-radius: 18px; overflow: hidden; border: 1px solid var(--glass-border); background: var(--glass-border); box-shadow: var(--glass-shadow); }
-  .fb-item { background: var(--glass-bg-strong); padding: 16px 14px; text-align: center; }
-  .fb-item b { display: block; font-family: var(--display); font-weight: 700; font-size: clamp(1.3rem,2.4vw,1.7rem); letter-spacing: -0.02em; }
-  .fb-item span { font-family: var(--mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
-  .live-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #2fae6b; box-shadow: 0 0 0 3px rgba(47,174,107,0.18); }
-  @media (max-width: 560px) { .facts-row { grid-template-columns: repeat(2,1fr); } }
+  /* ============ Stats (glass strip overlapping hero) ============ */
+  .stats-wrap { margin-top: -62px; position: relative; z-index: 5; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); border-radius: 26px; background: var(--nav-bg); border: 1px solid var(--nav-border); backdrop-filter: blur(24px) saturate(180%); -webkit-backdrop-filter: blur(24px) saturate(180%); box-shadow: var(--shadow-lift); overflow: hidden; }
+  .stat { padding: 22px 16px; text-align: center; position: relative; }
+  .stat + .stat::before { content: ""; position: absolute; left: 0; top: 22%; bottom: 22%; width: 1px; background: var(--line); }
+  .stat b { display: block; font-family: var(--display); font-weight: 700; font-size: clamp(1.9rem, 4vw, 2.8rem); line-height: 1.05; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  .stat span { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .live-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #22a861; box-shadow: 0 0 0 3px rgba(34,168,97,0.2); margin-right: 5px; vertical-align: middle; }
+  .stats-note { text-align: center; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); margin-top: 12px; }
+  @media (max-width: 620px) { .stats { grid-template-columns: repeat(2, 1fr); } .stat:nth-child(3)::before { display: none; } .stat:nth-child(n+3) { border-top: 1px solid var(--line); } }
 
   /* ============ ABOUT ============ */
-  .about-body p { color: var(--muted); margin-bottom: 14px; font-size: 1.02rem; }
+  .about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(32px, 6vw, 84px); align-items: center; margin-top: 8px; }
+  .about-body p { color: var(--muted); font-size: 1.1rem; margin-bottom: 16px; max-width: 56ch; }
   .about-body p strong { color: var(--ink); font-weight: 600; }
-  .edu { margin-top: 24px; border-top: 1px solid var(--line); padding-top: 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .edu-item .deg { font-family: var(--display); font-weight: 600; font-size: 0.98rem; letter-spacing: -0.01em; }
-  .edu-item .school { color: var(--muted); font-size: 0.88rem; margin-top: 2px; }
-  .edu-item .yr { font-family: var(--mono); color: var(--accent-2); font-size: 11.5px; margin-top: 4px; }
-  @media (max-width: 640px) { .edu { grid-template-columns: 1fr; } }
+  .fig { position: relative; }
+  .fig::before { content: ""; position: absolute; inset: 18px -14px -14px 18px; border-radius: 28px; background: linear-gradient(135deg, var(--accent-soft), transparent 70%); border: 1px solid var(--line); z-index: 0; }
+  .fig img { position: relative; z-index: 1; width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 28%; border-radius: 26px; box-shadow: var(--shadow); }
+  .fig .cap { position: relative; z-index: 1; margin-top: 14px; }
+  .edu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 44px; }
+  .edu-item { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 20px; box-shadow: var(--shadow-sm); }
+  .edu-item .yr { font-family: var(--mono); font-size: 11.5px; color: var(--teal); letter-spacing: 0.04em; }
+  .edu-item .deg { font-family: var(--display); font-weight: 600; font-size: 1.08rem; letter-spacing: -0.015em; margin-top: 8px; }
+  .edu-item .school { color: var(--muted); font-size: 0.94rem; }
+  @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } .fig { order: -1; max-width: 420px; } .edu { grid-template-columns: 1fr; } }
 
-  /* ============ EXPERIENCE (timeline) ============ */
-  .xp-list { display: flex; flex-direction: column; gap: 4px; margin-top: 22px; }
-  .xp {
-    position: relative; padding: 18px 20px 18px 30px; border-left: 2px solid var(--line);
+  /* ============ EXPERIENCE ============ */
+  .xp-list { margin-top: 40px; display: grid; gap: 14px; }
+  .xp { display: grid; grid-template-columns: 180px 1fr; gap: clamp(16px, 3vw, 40px); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: clamp(22px, 3vw, 32px); box-shadow: var(--shadow-sm); transition: box-shadow .3s ease, transform .3s ease; }
+  .xp:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+  .xp .yr { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; color: var(--accent); font-weight: 700; padding-top: 4px; }
+  .xp .role { font-family: var(--display); font-weight: 600; font-size: 1.25rem; letter-spacing: -0.02em; line-height: 1.2; }
+  .xp .org { color: var(--muted); font-size: 0.95rem; margin-top: 3px; }
+  .xp ul { margin: 14px 0 0 18px; color: var(--muted); font-size: 0.98rem; }
+  .xp li { margin-bottom: 6px; padding-left: 4px; }
+  .xp li::marker { color: var(--accent); }
+  @media (max-width: 680px) { .xp { grid-template-columns: 1fr; gap: 6px; } }
+
+  /* ============ EXPERTISE ============ */
+  .skills { margin-top: 40px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+  .skill { grid-column: span 2; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 22px; box-shadow: var(--shadow-sm); }
+  .skill.wide { grid-column: span 3; }
+  .skill h3 { font-family: var(--mono); font-weight: 700; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 14px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { font-size: 13.5px; font-weight: 500; padding: 7px 13px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); color: var(--ink); }
+  @media (max-width: 900px) { .skills { grid-template-columns: repeat(2, 1fr); } .skill, .skill.wide { grid-column: span 1; } .skill.last { grid-column: 1 / -1; } }
+  @media (max-width: 560px) { .skills { grid-template-columns: 1fr; } }
+
+  /* ============ RESEARCH — dark band where glass really shows ============ */
+  .band-wrap { padding: 0 clamp(8px, 2vw, 22px); }
+  .band {
+    position: relative; isolation: isolate; overflow: hidden; color: #F2F3F5; border-radius: clamp(28px, 4.5vw, 56px);
+    background: #0B0C0F;
   }
-  .xp::before { content: ""; position: absolute; left: -6px; top: 24px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--paper); }
-  .xp .role { font-family: var(--display); font-weight: 600; font-size: 1.04rem; letter-spacing: -0.01em; }
-  .xp .org { color: var(--muted); font-size: 0.92rem; margin-top: 1px; }
-  .xp .yr { font-family: var(--mono); font-size: 11px; color: var(--accent-2); margin-top: 4px; letter-spacing: 0.04em; text-transform: uppercase; }
-  .xp ul { margin: 10px 0 0 18px; color: var(--muted); font-size: 0.94rem; line-height: 1.6; }
-  .xp li { margin-bottom: 4px; }
-
-  /* ============ EXPERTISE (chips) ============ */
-  .skill-groups { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 22px; }
-  .skill-group h3 { font-family: var(--mono); font-weight: 700; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 10px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .chip-tag {
-    font-size: 12.5px; font-weight: 500; padding: 7px 13px; border-radius: 999px;
-    background: var(--glass-bg-soft); border: 1px solid var(--glass-border); color: var(--muted);
-  }
-  @media (max-width: 640px) { .skill-groups { grid-template-columns: 1fr; } }
-
-  /* ============ RESEARCH ============ */
-  .dexa { margin: 30px 0 20px; border-radius: 20px; overflow: hidden; background: #100b07; box-shadow: var(--glass-shadow); border: 1px solid rgba(255,255,255,0.08); display: grid; grid-template-columns: 1.1fr 1fr; align-items: stretch; }
-  .dexa__img { width: 100%; height: 100%; object-fit: contain; background: #100b07; max-height: 340px; padding: 12px; }
-  .dexa__txt { padding: clamp(22px, 3vw, 36px); color: #f1ece3; align-self: center; }
-  .dexa__txt .cap { color: rgba(255,255,255,0.6); margin-bottom: 14px; }
-  .dexa__txt h3 { font-family: var(--display); font-weight: 700; font-size: clamp(1.15rem,2vw,1.45rem); letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 10px; color: #fff; }
-  .dexa__txt p { color: rgba(255,255,255,0.74); font-size: 0.95rem; }
-  @media (max-width: 700px) { .dexa { grid-template-columns: 1fr; } .dexa__img { max-height: 260px; } }
-
-  .areas { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 18px; }
-  .area { padding: 18px 18px; display: flex; gap: 12px; background: var(--glass-bg-soft); border: 1px solid var(--glass-border); border-radius: 16px; transition: transform .25s ease, box-shadow .25s ease, background .25s ease; }
-  .area:hover { transform: translateY(-3px); box-shadow: var(--glass-shadow-lift); background: var(--glass-bg); }
-  .area .tick { width: 8px; height: 8px; border-radius: 2px; background: var(--accent); margin-top: 8px; flex: none; }
-  .area h3 { font-family: var(--display); font-weight: 600; font-size: 1.02rem; letter-spacing: -0.01em; margin-bottom: 4px; }
-  .area p { color: var(--muted); font-size: 0.9rem; }
+  .band::before { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(50% 55% at 12% 0%, rgba(240,118,108,0.38), transparent 70%), radial-gradient(45% 50% at 95% 30%, rgba(79,209,197,0.26), transparent 70%), radial-gradient(55% 55% at 40% 110%, rgba(227,174,92,0.24), transparent 70%); }
+  .band .eyebrow { color: rgba(255,255,255,0.65); }
+  .band .eyebrow .n { color: #F59A92; }
+  .band .eyebrow::after { background: rgba(255,255,255,0.2); }
+  .band .lede { color: rgba(255,255,255,0.72); }
+  .glass-d { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); backdrop-filter: blur(20px) saturate(150%); -webkit-backdrop-filter: blur(20px) saturate(150%); box-shadow: 0 18px 50px rgba(0,0,0,0.3); }
+  .dexa { margin-top: 44px; border-radius: 26px; overflow: hidden; display: grid; grid-template-columns: 1.1fr 1fr; align-items: stretch; }
+  .dexa img { width: 100%; height: 100%; max-height: 400px; object-fit: contain; background: rgba(0,0,0,0.55); padding: 14px; }
+  .dexa .txt { padding: clamp(24px, 4vw, 48px); align-self: center; }
+  .dexa .cap { color: rgba(255,255,255,0.6); margin-bottom: 16px; }
+  .dexa h3 { font-family: var(--display); font-weight: 700; font-size: clamp(1.4rem, 2.6vw, 2rem); letter-spacing: -0.025em; line-height: 1.1; margin-bottom: 14px; color: #fff; }
+  .dexa p { color: rgba(255,255,255,0.74); }
+  .areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 14px; }
+  .area { padding: 24px; border-radius: 22px; transition: transform .3s ease, background .3s ease; }
+  .area:hover { transform: translateY(-4px); background: rgba(255,255,255,0.11); }
+  .area .ico { width: 36px; height: 36px; border-radius: 11px; display: grid; place-items: center; background: rgba(240,118,108,0.18); color: #F59A92; margin-bottom: 18px; }
+  .area .ico svg { width: 18px; height: 18px; }
+  .area h3 { font-family: var(--display); font-weight: 600; font-size: 1.12rem; letter-spacing: -0.015em; margin-bottom: 6px; color: #fff; }
+  .area p { color: rgba(255,255,255,0.66); font-size: 0.94rem; }
+  @media (max-width: 900px) { .areas { grid-template-columns: repeat(2, 1fr); } .dexa { grid-template-columns: 1fr; } .dexa img { max-height: 300px; } }
   @media (max-width: 560px) { .areas { grid-template-columns: 1fr; } }
 
   /* ============ GALLERY ============ */
-  .grid { margin-top: 20px; display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; }
-  .gphoto { position: relative; overflow: hidden; border-radius: 14px; cursor: zoom-in; background: var(--glass-bg-soft); box-shadow: var(--glass-shadow); border: 1px solid var(--glass-border); padding: 0; margin: 0; display: block; width: 100%; transition: box-shadow .3s ease; }
-  .gphoto:hover { box-shadow: var(--glass-shadow-lift); }
-  .gphoto img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2,.7,.3,1); }
-  .gphoto:hover img { transform: scale(1.045); }
-  .gphoto figcaption { position: absolute; left: 0; right: 0; bottom: 0; font-family: var(--mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: #fff; text-align: left; padding: 22px 12px 10px; background: linear-gradient(to top, rgba(10,8,6,0.82), rgba(10,8,6,0)); opacity: 0; transform: translateY(6px); transition: opacity .3s ease, transform .3s ease; }
+  .grid { margin-top: 40px; display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+  .gphoto { position: relative; overflow: hidden; border-radius: 20px; cursor: zoom-in; background: var(--surface); box-shadow: var(--shadow-sm); border: 0; padding: 0; margin: 0; display: block; width: 100%; transition: box-shadow .3s ease, transform .3s ease; }
+  .gphoto:hover { box-shadow: var(--shadow-lift); transform: translateY(-3px); }
+  .gphoto img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.2,.7,.3,1); }
+  .gphoto:hover img { transform: scale(1.05); }
+  .gphoto figcaption { position: absolute; left: 10px; right: 10px; bottom: 10px; width: fit-content; max-width: calc(100% - 20px); font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase; color: #fff; text-align: left; padding: 7px 11px; border-radius: 999px; background: rgba(14,12,10,0.5); border: 1px solid rgba(255,255,255,0.16); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); opacity: 0; transform: translateY(6px); transition: opacity .3s ease, transform .3s ease; }
   .gphoto:hover figcaption, .gphoto:focus-visible figcaption { opacity: 1; transform: none; }
-  .gphoto:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  @media (hover: none) { .gphoto figcaption { opacity: 1; transform: none; } }
   .g-wide { grid-column: span 8; aspect-ratio: 16/10; } .g-tall { grid-column: span 4; aspect-ratio: 3/4; }
   .g-sq { grid-column: span 4; aspect-ratio: 1/1; } .g-med { grid-column: span 6; aspect-ratio: 3/2; }
-  @media (max-width: 760px) { .grid { grid-template-columns: repeat(6, 1fr); } .g-wide { grid-column: span 6; } .g-tall { grid-column: span 3; } .g-sq { grid-column: span 3; } .g-med { grid-column: span 3; aspect-ratio: 1/1; } }
-  @media (max-width: 520px) { .grid { grid-template-columns: 1fr 1fr; gap: 9px; } .g-wide, .g-tall, .g-sq, .g-med { grid-column: span 1; aspect-ratio: 1/1; } .g-wide { grid-column: span 2; aspect-ratio: 16/11; } }
+  @media (max-width: 860px) { .grid { grid-template-columns: repeat(6, 1fr); } .g-wide { grid-column: span 6; } .g-tall, .g-sq { grid-column: span 3; } .g-med { grid-column: span 3; aspect-ratio: 1/1; } }
+  @media (max-width: 520px) { .grid { grid-template-columns: 1fr 1fr; gap: 10px; } .g-wide, .g-tall, .g-sq, .g-med { grid-column: span 1; aspect-ratio: 1/1; } .g-wide { grid-column: span 2; aspect-ratio: 16/11; } }
 
-  /* ============ LEADERSHIP & SERVICE ============ */
-  .lead-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
-  .lead-card { padding: 20px; background: var(--glass-bg-soft); border: 1px solid var(--glass-border); border-radius: 16px; }
-  .lead-card .yr { font-family: var(--mono); font-size: 11px; color: var(--accent-2); text-transform: uppercase; letter-spacing: 0.04em; }
-  .lead-card h3 { font-family: var(--display); font-weight: 600; font-size: 1.05rem; margin: 6px 0 3px; letter-spacing: -0.01em; }
-  .lead-card .org { color: var(--muted); font-size: 0.86rem; margin-bottom: 8px; }
-  .lead-card p { color: var(--muted); font-size: 0.92rem; }
-  @media (max-width: 640px) { .lead-grid { grid-template-columns: 1fr; } }
+  /* ============ LEADERSHIP ============ */
+  .lead-grid { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .lead { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: clamp(24px, 3vw, 34px); box-shadow: var(--shadow-sm); position: relative; overflow: hidden; }
+  .lead::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent); }
+  .lead .yr { font-family: var(--mono); font-size: 11.5px; color: var(--teal); letter-spacing: 0.05em; font-weight: 700; }
+  .lead h3 { font-family: var(--display); font-weight: 600; font-size: 1.28rem; letter-spacing: -0.02em; line-height: 1.2; margin: 10px 0 4px; }
+  .lead .org { color: var(--faint); font-size: 0.9rem; margin-bottom: 12px; }
+  .lead p { color: var(--muted); font-size: 0.98rem; }
+  @media (max-width: 720px) { .lead-grid { grid-template-columns: 1fr; } }
 
   /* ============ AWARDS ============ */
-  .award-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
-  .award-cards figure { border-radius: 14px; overflow: hidden; box-shadow: var(--glass-shadow); background: var(--glass-bg-soft); border: 1px solid var(--glass-border); transition: box-shadow .3s ease; }
-  .award-cards figure:hover { box-shadow: var(--glass-shadow-lift); }
-  .award-cards img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 32%; cursor: zoom-in; }
-  .award-cards figcaption { font-family: var(--mono); font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); padding: 9px 10px 11px; }
-  .honors { margin-top: 22px; }
-  .honors h3 { font-family: var(--mono); font-weight: 700; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
-  .row { padding: 12px 0; border-top: 1px solid var(--line); }
-  .row .t { font-family: var(--display); font-weight: 600; font-size: 0.98rem; letter-spacing: -0.01em; }
-  .row .s { color: var(--muted); font-size: 0.88rem; margin-top: 1px; }
-  .row .p { color: var(--faint); font-size: 0.84rem; font-style: italic; margin-top: 3px; }
-  @media (max-width: 460px) { .award-cards { grid-template-columns: 1fr; } .award-cards img { aspect-ratio: 16/10; object-position: center 30%; } }
+  .awards-grid { margin-top: 40px; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(24px, 4vw, 56px); align-items: start; }
+  .certs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cert { margin: 0; border-radius: 20px; overflow: hidden; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm); transition: box-shadow .3s ease, transform .3s ease; }
+  .cert:hover { box-shadow: var(--shadow-lift); transform: translateY(-3px); }
+  .cert img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 32%; cursor: zoom-in; }
+  .cert figcaption { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); padding: 11px 13px 13px; }
+  .honor { display: grid; grid-template-columns: 38px 1fr; gap: 16px; padding: 20px 0; border-top: 1px solid var(--line); }
+  .honor:first-child { border-top: 0; padding-top: 0; }
+  .honor .medal { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
+  .honor .medal svg { width: 18px; height: 18px; }
+  .honor .t { font-family: var(--display); font-weight: 600; font-size: 1.1rem; letter-spacing: -0.015em; line-height: 1.25; }
+  .honor .s { color: var(--muted); font-size: 0.94rem; margin-top: 2px; }
+  .honor .p { color: var(--faint); font-size: 0.9rem; font-style: italic; margin-top: 6px; }
+  @media (max-width: 900px) { .awards-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 460px) { .certs { grid-template-columns: 1fr; } .cert img { aspect-ratio: 16/10; } }
 
   /* ============ PUBLICATIONS ============ */
-  .pub-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
-  .pub-head .r { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
-  .sync { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.03em; display: inline-flex; align-items: center; gap: 7px; color: var(--muted); }
+  .pub-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+  .sync-box { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+  .sync { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.03em; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
   .sync .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--faint); flex: none; }
-  .sync.loading .dot { background: var(--accent-3); animation: pulse 1.3s ease-in-out infinite; }
-  .sync.ok .dot { background: #2fae6b; }
+  .sync.loading .dot { background: var(--amber); animation: pulse 1.3s ease-in-out infinite; }
+  .sync.ok .dot { background: #22a861; }
   .sync.fail .dot { background: var(--accent); }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
   @media (prefers-reduced-motion: reduce) { .sync.loading .dot { animation: none; } }
 
-  .pub-tabs { display: flex; gap: 8px; margin-bottom: 16px; }
-  .pub-tab { padding: 9px 16px; border-radius: 999px; border: 1px solid var(--glass-border); background: var(--glass-bg-soft); color: var(--muted); font-size: 13px; font-weight: 600; cursor: pointer; transition: all .2s ease; font-family: var(--body); }
-  .pub-tab.on { background: var(--accent); border-color: var(--accent); color: #fff; }
-
-  .controls { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 22px; }
-  .search { flex: 1; min-width: 200px; padding: 11px 15px; border-radius: 11px; border: 1px solid var(--glass-border); background: var(--glass-bg-soft); color: var(--ink); font-family: var(--body); font-size: 14px; }
-  .search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent); }
+  .toolbar { margin-top: 36px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; position: sticky; top: 76px; z-index: 20; padding: 10px; border-radius: 20px; background: var(--nav-bg); border: 1px solid var(--nav-border); backdrop-filter: blur(20px) saturate(170%); -webkit-backdrop-filter: blur(20px) saturate(170%); box-shadow: var(--shadow); }
+  .seg { display: inline-flex; padding: 4px; border-radius: 14px; background: var(--paper); border: 1px solid var(--line); }
+  .seg button { padding: 8px 14px; border-radius: 10px; border: 0; background: transparent; color: var(--muted); font-family: var(--body); font-size: 13.5px; font-weight: 600; cursor: pointer; transition: background .2s ease, color .2s ease; }
+  .seg button.on { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-sm); }
+  .seg button .c { font-family: var(--mono); font-size: 11px; color: var(--accent); margin-left: 6px; }
+  .search { flex: 1; min-width: 180px; padding: 11px 15px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-family: var(--body); font-size: 14.5px; }
+  .search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
   .search::placeholder { color: var(--faint); }
-  .toggle { display: inline-flex; align-items: center; gap: 8px; padding: 11px 15px; border-radius: 11px; border: 1px solid var(--glass-border); background: var(--glass-bg-soft); color: var(--muted); font-family: var(--body); font-size: 13.5px; font-weight: 500; cursor: pointer; transition: all .2s ease; }
-  .toggle .box { width: 14px; height: 14px; border-radius: 4px; border: 1.5px solid var(--line); transition: all .2s ease; }
+  .toggle { display: inline-flex; align-items: center; gap: 9px; padding: 11px 15px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font-family: var(--body); font-size: 14px; font-weight: 500; cursor: pointer; transition: all .2s ease; }
+  .toggle .box { width: 15px; height: 15px; border-radius: 4px; border: 1.5px solid var(--faint); transition: all .2s ease; }
   .toggle.on { color: var(--ink); border-color: var(--accent); }
-  .toggle.on .box { background: var(--accent); border-color: var(--accent); box-shadow: inset 0 0 0 2px var(--glass-bg-soft); }
+  .toggle.on .box { background: var(--accent); border-color: var(--accent); box-shadow: inset 0 0 0 2px var(--surface); }
+  .result-count { font-family: var(--mono); font-size: 11.5px; color: var(--faint); letter-spacing: 0.04em; margin: 18px 4px 0; }
 
-  .timeline { display: flex; flex-direction: column; gap: 28px; }
-  .year-block { position: relative; padding-left: 70px; }
-  .year-tag { position: absolute; left: 0; top: 0; font-family: var(--display); font-weight: 700; font-size: 1rem; color: var(--accent); letter-spacing: -0.01em; }
-  .pub { padding: 15px 18px; margin-bottom: 10px; border-radius: 14px; background: var(--glass-bg-soft); border: 1px solid var(--glass-border); transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+  .timeline { margin-top: 14px; display: flex; flex-direction: column; gap: 30px; }
+  .year-block { position: relative; padding-left: 86px; }
+  .year-tag { position: absolute; left: 0; top: 16px; font-family: var(--display); font-weight: 700; font-size: 1.3rem; color: var(--accent); letter-spacing: -0.02em; }
+  .pub { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 22px; margin-bottom: 10px; box-shadow: var(--shadow-sm); transition: transform .2s ease, box-shadow .2s ease; }
   .pub:last-child { margin-bottom: 0; }
-  .pub:hover { transform: translateY(-2px); box-shadow: var(--glass-shadow-lift); background: var(--glass-bg); }
-  .ptitle { font-size: 1rem; font-weight: 500; line-height: 1.4; letter-spacing: -0.005em; margin-bottom: 4px; }
+  .pub:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+  .ptitle { font-size: 1.04rem; font-weight: 600; line-height: 1.42; letter-spacing: -0.01em; margin-bottom: 5px; }
   .ptitle a { color: var(--ink); transition: color .15s ease; }
   .ptitle a:hover { color: var(--accent-ink); }
-  .pauth { color: var(--muted); font-size: 0.87rem; line-height: 1.5; }
-  .pauth strong { color: var(--ink); font-weight: 600; }
-  .pmeta { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-top: 8px; }
-  .venue { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+  .pauth { color: var(--muted); font-size: 0.9rem; line-height: 1.55; }
+  .pauth strong { color: var(--ink); font-weight: 700; }
+  .pmeta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 10px; }
+  .venue { font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
   .venue em, .ptitle em { font-style: italic; }
-  .chip { font-family: var(--mono); font-size: 10px; letter-spacing: 0.03em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
-  .chip.fa { color: var(--accent-ink); border-color: color-mix(in srgb, var(--accent) 36%, transparent); background: color-mix(in srgb, var(--accent) 7%, transparent); }
-  .chip.cite { color: var(--muted); }
-  .chip.doi { color: var(--ink); text-decoration: none; }
+  .chip { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .chip.fa { color: var(--accent-ink); border-color: transparent; background: var(--accent-soft); font-weight: 700; }
+  .chip.doi { color: var(--ink); }
   .chip.doi:hover { border-color: var(--accent); color: var(--accent-ink); }
-  .chip.new { color: var(--accent-2); border-color: color-mix(in srgb, var(--accent-2) 40%, transparent); background: color-mix(in srgb, var(--accent-2) 10%, transparent); }
-  .empty { color: var(--faint); font-family: var(--mono); font-size: 13px; padding: 20px 0; }
-  @media (max-width: 520px) { .year-block { padding-left: 0; } .year-tag { position: static; display: block; margin-bottom: 8px; } }
+  .chip.new { color: var(--teal); border-color: transparent; background: color-mix(in srgb, var(--teal) 14%, transparent); font-weight: 700; }
+  .empty { color: var(--faint); font-family: var(--mono); font-size: 13px; padding: 24px 4px; }
+  @media (max-width: 560px) { .year-block { padding-left: 0; } .year-tag { position: static; display: block; margin-bottom: 10px; } .toolbar { top: 66px; } }
 
-  /* ============ PROFESSIONAL SERVICE ============ */
-  .service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
-  .service-grid h3 { font-family: var(--mono); font-weight: 700; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
-  .mem-list { display: flex; flex-direction: column; gap: 8px; }
-  .mem-list .row2 { display: flex; align-items: center; gap: 9px; font-size: 0.94rem; }
-  .mem-list .row2 .tick { width: 7px; height: 7px; border-radius: 2px; background: var(--accent-2); flex: none; }
-  .review-stats { display: flex; gap: 10px; margin-bottom: 12px; }
-  .review-stats .rs { flex: 1; text-align: center; padding: 12px 8px; border-radius: 12px; background: var(--glass-bg-soft); border: 1px solid var(--glass-border); }
-  .review-stats .rs b { display: block; font-family: var(--display); font-weight: 700; font-size: 1.3rem; }
-  .review-stats .rs span { font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; color: var(--muted); }
-  .service-grid p.small { color: var(--muted); font-size: 0.88rem; line-height: 1.6; }
-  @media (max-width: 640px) { .service-grid { grid-template-columns: 1fr; } }
+  /* ============ SERVICE ============ */
+  .service-grid { margin-top: 40px; display: grid; grid-template-columns: 1fr 1.2fr; gap: 14px; }
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: clamp(24px, 3vw, 34px); box-shadow: var(--shadow-sm); }
+  .panel h3 { font-family: var(--mono); font-weight: 700; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 18px; }
+  .mem { display: flex; flex-direction: column; gap: 14px; }
+  .mem div { display: flex; gap: 12px; align-items: flex-start; font-size: 0.98rem; }
+  .mem div::before { content: ""; width: 8px; height: 8px; border-radius: 3px; background: var(--teal); margin-top: 8px; flex: none; }
+  .rev-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 18px; }
+  .rev-stats .rs { text-align: center; padding: 16px 8px; border-radius: 16px; background: var(--surface-2); border: 1px solid var(--line); }
+  .rev-stats b { display: block; font-family: var(--display); font-weight: 700; font-size: 2rem; line-height: 1.1; letter-spacing: -0.03em; }
+  .rev-stats span { font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .panel p { color: var(--muted); font-size: 0.96rem; }
+  @media (max-width: 820px) { .service-grid { grid-template-columns: 1fr; } }
 
   /* ============ CONTACT ============ */
-  .contact { text-align: center; }
-  .contact .eyebrow { justify-content: center; }
-  .contact h2 { margin: 0 auto; }
-  .contact-line { margin-top: 16px; }
-  .contact-line a { font-family: var(--display); font-weight: 700; font-size: clamp(1.3rem, 3.4vw, 1.9rem); color: var(--ink); letter-spacing: -0.02em; }
-  .contact-line a:hover { color: var(--accent-ink); }
-  .contact-sub { color: var(--muted); margin-top: 6px; font-size: 0.94rem; }
-  .contact-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 22px; }
-  .contact-links a { color: var(--muted); font-size: 13.5px; font-weight: 500; padding: 8px 16px; border-radius: 999px; background: var(--glass-bg-soft); border: 1px solid var(--glass-border); transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease; }
-  .contact-links a:hover { color: var(--accent-ink); background: var(--glass-bg); border-color: var(--accent); transform: translateY(-2px); }
+  .contact-card { position: relative; isolation: isolate; overflow: hidden; border-radius: clamp(28px, 4.5vw, 52px); padding: clamp(44px, 8vw, 92px) clamp(22px, 5vw, 64px); text-align: center; color: #fff; background: linear-gradient(135deg, #6f1814 0%, #b0251f 52%, #dc4a31 100%); box-shadow: var(--shadow-lift); }
+  .contact-card::before { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(60% 80% at 85% 0%, rgba(255,255,255,0.22), transparent 60%), radial-gradient(50% 70% at 0% 100%, rgba(0,0,0,0.28), transparent 70%); }
+  .contact-card .eyebrow { justify-content: center; color: rgba(255,255,255,0.8); }
+  .contact-card .eyebrow .n { color: #fff; }
+  .contact-card .eyebrow::after { display: none; }
+  .contact-card h2 { color: #fff; margin: 0 auto; max-width: 14ch; }
+  .mail { display: inline-block; margin-top: 26px; font-family: var(--display); font-weight: 700; font-size: clamp(1.4rem, 4.2vw, 2.6rem); letter-spacing: -0.03em; color: #fff; border-bottom: 2px solid rgba(255,255,255,0.4); padding-bottom: 4px; transition: border-color .2s ease; word-break: break-word; }
+  .mail:hover { border-color: #fff; }
+  .contact-card .where { color: rgba(255,255,255,0.8); margin-top: 14px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 30px; }
+  .pills a { color: #fff; font-size: 14px; font-weight: 600; padding: 10px 18px; border-radius: 999px; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.3); backdrop-filter: blur(10px); transition: background .2s ease, transform .2s ease; }
+  .pills a:hover { background: rgba(255,255,255,0.26); transform: translateY(-2px); }
 
-  footer { padding: 30px 0 10px; }
-  footer .fw { font-family: var(--mono); font-size: 11.5px; color: var(--faint); letter-spacing: 0.02em; line-height: 1.8; text-align: center; }
+  footer { padding: 44px 0 40px; }
+  footer .wrap { font-family: var(--mono); font-size: 11.5px; color: var(--faint); letter-spacing: 0.03em; line-height: 1.9; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 
-  .lb { position: fixed; inset: 0; z-index: 200; display: none; place-items: center; padding: 30px; background: rgba(10,8,6,0.92); backdrop-filter: blur(6px); }
+  /* ============ Mobile tab bar ============ */
+  .tabbar { display: none; position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 80; padding: 7px 8px; border-radius: 999px; background: var(--nav-bg); border: 1px solid var(--nav-border); backdrop-filter: blur(22px) saturate(180%); -webkit-backdrop-filter: blur(22px) saturate(180%); box-shadow: var(--shadow-lift); justify-content: space-between; }
+  .tabbar a { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; color: var(--muted); font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.04em; text-transform: uppercase; padding: 7px 2px; border-radius: 999px; transition: color .2s ease, background .2s ease; }
+  .tabbar a svg { width: 19px; height: 19px; }
+  .tabbar a[aria-current="true"] { color: var(--accent-ink); background: var(--accent-soft); }
+  @media (max-width: 860px) { .tabbar { display: flex; } footer { padding-bottom: 110px; } }
+
+  /* ============ Lightbox ============ */
+  .lb { position: fixed; inset: 0; z-index: 200; display: none; place-items: center; padding: 30px; background: rgba(8,7,6,0.9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
   .lb.open { display: grid; }
-  .lb img { max-width: min(1100px, 94vw); max-height: 84vh; border-radius: 12px; box-shadow: 0 30px 80px rgba(0,0,0,0.6); }
-  .lb-cap { position: fixed; bottom: 22px; left: 0; right: 0; text-align: center; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.78); padding: 0 30px; }
-  .lb-close { position: fixed; top: 20px; right: 24px; width: 42px; height: 42px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.08); color: #fff; font-size: 22px; line-height: 1; cursor: pointer; display: grid; place-items: center; transition: background .2s ease; }
-  .lb-close:hover { background: rgba(255,255,255,0.2); }
-  @media (prefers-reduced-motion: reduce) { .lb { backdrop-filter: none; } }
-
-  a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .lb img { max-width: min(1100px, 92vw); max-height: 82vh; border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,0.6); }
+  .lb-cap { position: fixed; bottom: 22px; left: 0; right: 0; text-align: center; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.8); padding: 0 30px; }
+  .lb-btn { position: fixed; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.28); background: rgba(255,255,255,0.1); color: #fff; font-size: 22px; line-height: 1; cursor: pointer; display: grid; place-items: center; transition: background .2s ease; backdrop-filter: blur(10px); }
+  .lb-btn:hover { background: rgba(255,255,255,0.22); }
+  .lb-close { top: 20px; right: 22px; } .lb-prev { left: 18px; top: 50%; transform: translateY(-50%); } .lb-next { right: 18px; top: 50%; transform: translateY(-50%); }
+  .lb-prev[hidden], .lb-next[hidden] { display: none; }
 </style>
 </head>
 <body>
 
-<div class="mesh-bg" aria-hidden="true"></div>
-
-<div class="shell">
-  <!-- ============ Sidebar (desktop) ============ -->
-  <aside class="sidebar">
-    <div class="sb-id">
-      <span class="dp">DP</span>
-      <div><div class="name">Deependra Paneru</div><div class="role">Poultry Researcher, PhD</div></div>
-    </div>
-    <figure class="sb-photo"><img src="./img/portrait-broiler.jpg" alt="Deependra Paneru holding a broiler chicken in the lab" loading="lazy" /></figure>
-    <nav class="sb-nav" aria-label="Primary">
-      <a href="#about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>About</a>
-      <a href="#experience"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Experience</a>
-      <a href="#expertise"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6M10 3v5.5L5.5 17a2 2 0 0 0 1.8 3h9.4a2 2 0 0 0 1.8-3L14 8.5V3"/></svg>Expertise</a>
-      <a href="#research"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Research</a>
-      <a href="#gallery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5-9 9"/></svg>Gallery</a>
-      <a href="#leadership"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Leadership</a>
-      <a href="#awards"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 13.5 7 22l5-3 5 3-2-8.5"/></svg>Awards</a>
-      <a href="#publications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17.5A2.5 2.5 0 0 1 17.5 22H6.5A2.5 2.5 0 0 1 4 19.5v-15z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>Publications</a>
-      <a href="#service"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>Service</a>
-      <a href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Contact</a>
+<header class="nav" id="nav">
+  <div class="nav-pill">
+    <a class="brand" href="#top" aria-label="Deependra Paneru — home"><span class="dp">DP</span><span class="who">Deependra Paneru</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#awards">Awards</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cv" href="./Deependra_Paneru_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
     </nav>
-    <a class="sb-cv" href="./Deependra_Paneru_CV.pdf" target="_blank" rel="noopener">Download CV ↗</a>
-    <div class="sb-social">
-      <a href="https://scholar.google.com/citations?user=zL19zlEAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 9l11 7 9-5.7V16h2V9L12 2zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 4.5-7-4.5z"/></svg></a>
-      <a href="https://orcid.org/0000-0002-2780-3933" target="_blank" rel="noopener" aria-label="ORCID"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zM7.4 18.1H5.5V7.6h1.9v10.5zM6.4 6.3a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2zm12.2 11.8h-1.9v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7v5.2h-1.9V7.6h1.8v1.4h.1c.3-.5 1-1.1 2.1-1.1 2.3 0 2.7 1.5 2.7 3.4v6.8z"/></svg></a>
-      <a href="https://www.linkedin.com/in/panerud/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
-      <a href="mailto:dpaneru@uga.edu" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
-    </div>
-  </aside>
+  </div>
+</header>
 
-  <!-- ============ Mobile top bar ============ -->
-  <header class="topbar">
-    <a class="brand" href="#top"><span class="dp">DP</span><span class="who">Deependra Paneru</span></a>
-    <a class="tb-cv" href="./Deependra_Paneru_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
-  </header>
+<main id="top">
 
-  <!-- ============ Main content ============ -->
-  <main class="content" id="top">
-
-    <section class="hero" id="hero">
-      <div class="card">
-        <div class="hero-grid">
-          <div>
-            <div class="eyebrow reveal">Poultry Science — University of Georgia</div>
-            <h1 class="reveal">Deependra Paneru</h1>
-            <p class="role reveal">Poultry Nutrition &amp; Health Researcher <span class="at">· Dept. of Poultry Science, UGA</span></p>
-            <p class="lede reveal">Intestinal integrity, skeletal biology, mycotoxicology, and the gut microbiome — developing nutritional and management strategies for bird health, welfare, and resilience.</p>
-            <div class="hero-actions reveal">
-              <a class="primary" href="mailto:dpaneru@uga.edu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
-              <a href="https://scholar.google.com/citations?user=zL19zlEAAAAJ&hl=en" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 9l11 7 9-5.7V16h2V9L12 2zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 4.5-7-4.5z"/></svg>Scholar</a>
-              <a href="https://orcid.org/0000-0002-2780-3933" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zM7.4 18.1H5.5V7.6h1.9v10.5zM6.4 6.3a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2zm12.2 11.8h-1.9v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7v5.2h-1.9V7.6h1.8v1.4h.1c.3-.5 1-1.1 2.1-1.1 2.3 0 2.7 1.5 2.7 3.4v6.8z"/></svg>ORCID</a>
-            </div>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero" style="padding-top:120px">
+    <img class="hero__img" src="./img/hero-layerhouse.jpg" alt="Deependra Paneru holding a laying hen in a poultry research facility at the University of Georgia" fetchpriority="high" />
+    <div class="hero__scrim"></div>
+    <div class="wrap" style="width:100%">
+      <div class="hero-in">
+        <div class="hero-copy">
+          <div class="eyebrow">Poultry Science · University of Georgia</div>
+          <h1>Deependra<br>Paneru</h1>
+          <p class="role">Postdoctoral Research Associate <span>· Dept. of Poultry Science, UGA</span></p>
+          <p class="tagline">Poultry nutrition and health researcher (Ph.D., Poultry Science) working on intestinal integrity, skeletal biology, mycotoxicology, and the gut microbiome — for bird health, welfare, and resilience.</p>
+          <div class="actions">
+            <a class="btn primary" href="mailto:dpaneru@uga.edu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email me</a>
+            <a class="btn" href="#publications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17.5A2.5 2.5 0 0 1 17.5 22H6.5A2.5 2.5 0 0 1 4 19.5v-15z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>Publications</a>
+            <a class="btn" href="./Deependra_Paneru_CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/></svg>CV</a>
           </div>
-          <figure class="hero-figure reveal">
-            <img src="./img/hero-layerhouse.jpg" alt="Deependra Paneru holding a laying hen in a poultry research facility at the University of Georgia" fetchpriority="high" />
-          </figure>
         </div>
-        <div class="facts-row reveal">
-          <div class="fb-item"><b id="m-pubs">25</b><span>Publications</span></div>
-          <div class="fb-item"><b id="m-first">11</b><span>First-author</span></div>
-          <div class="fb-item"><b id="m-hindex">—</b><span>h-index</span></div>
-          <div class="fb-item"><b id="m-cites">—</b><span><span class="live-dot"></span> Live citations</span></div>
-        </div>
+        <div class="hero-cap">Layer research facility · Athens, GA</div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about">
-      <div class="card">
-        <div class="eyebrow reveal">About</div>
-        <h2 class="reveal">Research profile</h2>
-        <div class="about-body reveal" style="margin-top:18px">
-          <p>Poultry nutrition and health researcher specializing in <strong>intestinal integrity, skeletal biology, mycotoxicology, and the gut microbiome</strong>. I develop nutritional and management strategies to strengthen bird health, welfare, productivity, and resilience to disease and environmental stress.</p>
-          <p>I pair gut-permeability assays, qPCR, ELISA, and flow cytometry with <strong>DEXA and micro-CT</strong> imaging of bone and body composition — connecting bench-level mechanism to production-relevant welfare and management outcomes.</p>
+  <!-- ============ STATS ============ -->
+  <div class="wrap stats-wrap">
+    <div class="stats reveal">
+      <div class="stat"><b id="m-pubs">28</b><span>Journal articles</span></div>
+      <div class="stat"><b id="m-first">12</b><span>First-author</span></div>
+      <div class="stat"><b id="m-hindex">—</b><span>h-index</span></div>
+      <div class="stat"><b id="m-cites">—</b><span>Citations</span></div>
+    </div>
+    <p class="stats-note"><span class="live-dot"></span>Live from OpenAlex · Site last updated <time class="last-updated" datetime="2026-10-03T17:44:28.504Z">October 3, 2026</time></p>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="wrap">
+      <div class="eyebrow reveal"><span class="n">01</span>About</div>
+      <h2 class="reveal">Where nutrition, health, and welfare meet.</h2>
+      <div class="about-grid">
+        <div class="about-body reveal">
+          <p>I'm a poultry nutrition and health researcher specializing in <strong>intestinal integrity, skeletal biology, mycotoxicology, and the gut microbiome</strong>. I develop nutritional and management strategies that strengthen bird health, welfare, productivity, and resilience to disease and environmental stress.</p>
+          <p>I pair gut-permeability assays, qPCR, ELISA, and flow cytometry with <strong>DEXA and micro-CT</strong> imaging of bone and body composition — connecting bench-level mechanism to the welfare and management questions of modern production.</p>
         </div>
-        <div class="edu reveal">
-          <div class="edu-item"><div class="deg">PhD, Poultry Science</div><div class="school">University of Georgia</div><div class="yr">2022 — 2026</div></div>
-          <div class="edu-item"><div class="deg">MS, Agricultural Regulations</div><div class="school">University of Arkansas at Pine Bluff</div><div class="yr">2019 — 2021</div></div>
-          <div class="edu-item"><div class="deg">BS, Agriculture</div><div class="school">Tribhuvan University, Nepal</div><div class="yr">2013 — 2017</div></div>
-        </div>
+        <figure class="fig reveal">
+          <img src="./img/portrait-broiler.jpg" alt="Deependra Paneru holding a broiler chicken in the lab" loading="lazy" />
+          <figcaption class="cap">Broiler handling · research facility</figcaption>
+        </figure>
       </div>
-    </section>
+      <div class="edu">
+        <div class="edu-item reveal"><div class="yr">2022 — 2026</div><div class="deg">Ph.D., Poultry Science</div><div class="school">University of Georgia · Athens, GA</div></div>
+        <div class="edu-item reveal"><div class="yr">2019 — 2021</div><div class="deg">M.S., Agricultural Regulations</div><div class="school">University of Arkansas at Pine Bluff</div></div>
+        <div class="edu-item reveal"><div class="yr">2013 — 2017</div><div class="deg">B.S., Agriculture</div><div class="school">Tribhuvan University · Kathmandu, Nepal</div></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="experience">
-      <div class="card">
-        <div class="eyebrow reveal">Experience</div>
-        <h2 class="reveal">Research &amp; teaching</h2>
-        <p class="section-lede reveal">Bench work and mentoring across two research programs.</p>
-        <div class="xp-list reveal">
-          <div class="xp">
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="eyebrow reveal"><span class="n">02</span>Experience</div>
+      <h2 class="reveal">Research, teaching &amp; mentoring.</h2>
+      <div class="xp-list">
+        <article class="xp reveal">
+          <div class="yr">2026 — Present</div>
+          <div>
+            <div class="role">Postdoctoral Research Associate</div>
+            <div class="org">Department of Poultry Science, University of Georgia · Athens, GA</div>
+          </div>
+        </article>
+        <article class="xp reveal">
+          <div class="yr">2022 — 2026</div>
+          <div>
             <div class="role">Graduate Research &amp; Teaching Assistant</div>
             <div class="org">Department of Poultry Science, University of Georgia · Athens, GA</div>
-            <div class="yr">2022 — 2026</div>
             <ul>
-              <li>Designed and executed multiple studies on mycotoxins, coccidiosis, and heat stress, evaluating productivity, gut integrity, immunity, and bone health.</li>
-              <li>Performed FITC-dextran gut-permeability assays, ELISA, qPCR, flow cytometry, intestinal histomorphology, DEXA, and micro-CT.</li>
-              <li>Analyzed longitudinal and factorial datasets using SAS, R, and JMP.</li>
+              <li>Designed and conducted multiple research projects evaluating the effects of mycotoxins, coccidiosis, and heat stress on productivity, gut health, immunity, and bone health in poultry, resulting in numerous peer-reviewed publications.</li>
+              <li>Conducted in vitro and molecular assays including FITC-dextran gut permeability, ELISA, qPCR, and flow cytometry; assessed bone and body composition by DEXA and micro-CT.</li>
+              <li>Applied statistical analyses (SAS, R, JMP) to longitudinal and factorial datasets.</li>
             </ul>
           </div>
-          <div class="xp">
+        </article>
+        <article class="xp reveal">
+          <div class="yr">2019 — 2021</div>
+          <div>
             <div class="role">Graduate Research Assistant</div>
-            <div class="org">Department of Agriculture, University of Arkansas at Pine Bluff</div>
-            <div class="yr">2019 — 2021</div>
-            <ul>
-              <li>Investigated antibiotic alternatives in broiler diets, including fenugreek seeds and Bacillus-based probiotics, demonstrating changes in cecal microbiota, immune responses, and growth.</li>
-            </ul>
+            <div class="org">Department of Agriculture, University of Arkansas at Pine Bluff · Pine Bluff, AR</div>
+            <ul><li>Conducted research on antibiotic alternatives, incorporating fenugreek seeds and <em>Bacillus</em>-based probiotics into broiler diets, which modulated cecal microbiota and improved immune responses and growth in broiler chickens.</li></ul>
           </div>
-          <div class="xp">
+        </article>
+        <article class="xp reveal">
+          <div class="yr">2022 — 2026</div>
+          <div>
             <div class="role">Teaching Assistant</div>
             <div class="org">Integrated Animal Nutrition (POUL 3750) · Global Agriculture &amp; World Culture (AESC 2050)</div>
-            <div class="yr">2022 — 2026</div>
-            <ul><li>Supported undergraduate instruction, grading, and student mentoring in applied animal science and nutrition.</li></ul>
+            <ul><li>Assisted with undergraduate instruction, grading, and student mentoring in applied animal science and nutrition courses.</li></ul>
           </div>
-          <div class="xp">
+        </article>
+        <article class="xp reveal">
+          <div class="yr">2023 — 2026</div>
+          <div>
             <div class="role">Undergraduate &amp; High-School Student Mentor</div>
             <div class="org">University of Georgia</div>
-            <div class="yr">2023 — 2026</div>
-            <ul><li>Trained students in laboratory techniques, experimental design, data analysis, and scientific communication.</li></ul>
+            <ul><li>Provided hands-on training in laboratory techniques, experimental design, data analysis, and scientific communication for students working within the department.</li></ul>
           </div>
-        </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="expertise">
-      <div class="card">
-        <div class="eyebrow reveal">Expertise</div>
-        <h2 class="reveal">Technical skills</h2>
-        <div class="skill-groups reveal">
-          <div class="skill-group"><h3>Poultry Nutrition</h3><div class="chips"><span class="chip-tag">Feed formulation</span><span class="chip-tag">Nutritional modeling</span><span class="chip-tag">Mycotoxicology</span></div></div>
-          <div class="skill-group"><h3>Gut Health &amp; Microbiome</h3><div class="chips"><span class="chip-tag">QIIME 2</span><span class="chip-tag">Metagenomics</span><span class="chip-tag">FITC-dextran permeability</span><span class="chip-tag">Intestinal histomorphology</span></div></div>
-          <div class="skill-group"><h3>Molecular Biology &amp; Immunology</h3><div class="chips"><span class="chip-tag">qPCR</span><span class="chip-tag">Gene expression</span><span class="chip-tag">ELISA</span><span class="chip-tag">Flow cytometry</span></div></div>
-          <div class="skill-group"><h3>Bone &amp; Body Composition</h3><div class="chips"><span class="chip-tag">DEXA</span><span class="chip-tag">Micro-CT</span></div></div>
-          <div class="skill-group" style="grid-column:1/-1"><h3>Data Analysis</h3><div class="chips"><span class="chip-tag">SAS</span><span class="chip-tag">R</span><span class="chip-tag">JMP</span><span class="chip-tag">Longitudinal designs</span><span class="chip-tag">Factorial designs</span></div></div>
-        </div>
+  <!-- ============ EXPERTISE ============ -->
+  <section id="expertise" style="padding-top:0">
+    <div class="wrap">
+      <div class="eyebrow reveal"><span class="n">03</span>Expertise</div>
+      <h2 class="reveal">Technical toolkit.</h2>
+      <div class="skills">
+        <div class="skill reveal"><h3>Gut health &amp; microbiome</h3><div class="tags"><span class="tag">QIIME 2</span><span class="tag">Metagenomics</span><span class="tag">FITC-dextran permeability</span><span class="tag">Intestinal histomorphology</span></div></div>
+        <div class="skill reveal"><h3>Molecular biology &amp; immunology</h3><div class="tags"><span class="tag">qPCR</span><span class="tag">Gene expression</span><span class="tag">ELISA</span><span class="tag">Flow cytometry</span></div></div>
+        <div class="skill reveal"><h3>Feed &amp; nutrition</h3><div class="tags"><span class="tag">Feed formulation</span><span class="tag">Nutritional modeling</span></div></div>
+        <div class="skill wide reveal"><h3>Bone &amp; body composition</h3><div class="tags"><span class="tag">DEXA</span><span class="tag">Micro-CT</span></div></div>
+        <div class="skill wide reveal"><h3>Statistical analysis</h3><div class="tags"><span class="tag">SAS</span><span class="tag">R</span><span class="tag">JMP</span><span class="tag">Longitudinal &amp; factorial designs</span></div></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="research">
-      <div class="card">
-        <div class="eyebrow reveal">Research</div>
-        <h2 class="reveal">Areas of focus</h2>
-        <p class="section-lede reveal">From the intestinal barrier and the skeleton to the microbiome — with a growing focus on welfare and management.</p>
+  <!-- ============ RESEARCH (dark band) ============ -->
+  <div class="band-wrap">
+    <section class="band" id="research">
+      <div class="wrap">
+        <div class="eyebrow reveal"><span class="n">04</span>Research</div>
+        <h2 class="reveal">Six lines of inquiry, one bird.</h2>
+        <p class="lede reveal">From the intestinal barrier and the skeleton to the microbiome — with a growing focus on welfare and management.</p>
 
-        <figure class="dexa reveal">
-          <img class="dexa__img" src="./img/dexa-scan.jpg" alt="Dual-energy X-ray absorptiometry scan of a chicken showing skeleton and soft tissue" loading="lazy" />
-          <figcaption class="dexa__txt">
+        <figure class="dexa glass-d reveal">
+          <img src="./img/dexa-scan.jpg" alt="Dual-energy X-ray absorptiometry scan of a chicken showing skeleton and soft tissue" loading="lazy" />
+          <figcaption class="txt">
             <div class="cap">Dual-energy X-ray absorptiometry</div>
             <h3>Reading the skeleton, quantifying the bird.</h3>
             <p>DEXA and micro-CT let me measure bone mineralization, microarchitecture, and whole-body composition across nutritional and disease challenges.</p>
@@ -544,212 +560,196 @@
         </figure>
 
         <div class="areas">
-          <div class="area reveal"><span class="tick" aria-hidden="true"></span><div><h3>Gut Health &amp; Intestinal Integrity</h3><p>Barrier function under dietary and pathogen stress.</p></div></div>
-          <div class="area reveal"><span class="tick" aria-hidden="true"></span><div><h3>Mycotoxicology</h3><p>Deoxynivalenol and aflatoxin B1 on growth, gut, and bone.</p></div></div>
-          <div class="area reveal"><span class="tick" aria-hidden="true"></span><div><h3>Skeletal Biology &amp; Body Composition</h3><p>Bone and composition by DEXA and micro-CT.</p></div></div>
-          <div class="area reveal"><span class="tick" aria-hidden="true"></span><div><h3>Gut Microbiome</h3><p>Cecal community shifts via QIIME2 and metagenomics.</p></div></div>
-          <div class="area reveal"><span class="tick" aria-hidden="true"></span><div><h3>Immunology</h3><p>Immune response to enteric challenge by flow cytometry.</p></div></div>
-          <div class="area reveal"><span class="tick" aria-hidden="true"></span><div><h3>Health, Welfare &amp; Management</h3><p>Translating physiology into welfare and management.</p></div></div>
+          <div class="area glass-d reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 0 7 2 7 5s-3 3-7 3-7 0-7 3 3 5 7 5"/><path d="M5 8c0-3 3-5 7-5"/></svg></div><h3>Gut health &amp; intestinal integrity</h3><p>Barrier function under dietary and pathogen stress.</p></div>
+          <div class="area glass-d reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg></div><h3>Mycotoxicology</h3><p>Deoxynivalenol and aflatoxin B1 on growth, gut, and bone.</p></div>
+          <div class="area glass-d reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3a3 3 0 0 0-2 5l8 8a3 3 0 1 0 5 2 3 3 0 0 0-5-2l-8-8a3 3 0 0 0-3-5z" transform="rotate(45 12 12) scale(.9) translate(1.3 1.3)"/></svg></div><h3>Skeletal biology &amp; body composition</h3><p>Bone and composition by DEXA and micro-CT.</p></div>
+          <div class="area glass-d reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="9" r="2"/><circle cx="12" cy="16" r="3.5"/></svg></div><h3>Gut microbiome</h3><p>Cecal community shifts via QIIME 2 and metagenomics.</p></div>
+          <div class="area glass-d reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Immunology</h3><p>Immune response to enteric challenge by flow cytometry.</p></div>
+          <div class="area glass-d reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div><h3>Health, welfare &amp; management</h3><p>Translating physiology into welfare and management.</p></div>
         </div>
       </div>
     </section>
+  </div>
 
-    <section id="gallery">
-      <div class="card">
-        <div class="eyebrow reveal">Gallery</div>
-        <h2 class="reveal">In the lab &amp; in the field</h2>
-        <p class="section-lede reveal">Research, conferences, and the people I work alongside. Tap any photo to enlarge.</p>
-        <div class="grid reveal">
-          <button class="gphoto g-wide" data-full="./img/lab-dept.jpg" aria-label="Enlarge: Kim Lab, Department of Poultry Science">
-            <img src="./img/lab-dept-t.jpg" alt="Kim Lab group at the UGA Department of Poultry Science sign" loading="lazy" />
-            <figcaption>Kim Lab · Dept. of Poultry Science</figcaption>
-          </button>
-          <button class="gphoto g-tall" data-full="./img/grad.jpg" aria-label="Enlarge: doctoral hooding">
-            <img src="./img/grad-t.jpg" alt="Deependra Paneru in doctoral regalia with his advisor" loading="lazy" />
-            <figcaption>Doctoral hooding</figcaption>
-          </button>
-          <button class="gphoto g-sq" data-full="./img/psa-awards-2023.jpg" aria-label="Enlarge: PSA Awards 2023">
-            <img src="./img/psa-awards-2023-t.jpg" alt="Lab group at the Poultry Science Association Awards 2023" loading="lazy" />
-            <figcaption>PSA Awards · 2023</figcaption>
-          </button>
-          <button class="gphoto g-sq" data-full="./img/psa-banquet.jpg" aria-label="Enlarge: PSA Annual Meeting 2024">
-            <img src="./img/psa-banquet-t.jpg" alt="Lab group at the Poultry Science Association banquet 2024" loading="lazy" />
-            <figcaption>PSA Annual Meeting · 2024</figcaption>
-          </button>
-          <button class="gphoto g-med" data-full="./img/lab-galthouse.jpg" aria-label="Enlarge: PSA Annual Meeting, Louisville">
-            <img src="./img/lab-galthouse-t.jpg" alt="Lab group outside the Galt House in Louisville" loading="lazy" />
-            <figcaption>PSA Meeting · Louisville, KY</figcaption>
-          </button>
-          <button class="gphoto g-sq" data-full="./img/lab-dinner.jpg" aria-label="Enlarge: lab dinner">
-            <img src="./img/lab-dinner-t.jpg" alt="Lab group at dinner" loading="lazy" />
-            <figcaption>Lab dinner · Athens, GA</figcaption>
-          </button>
-          <button class="gphoto g-sq" data-full="./img/lab-dept-winter.jpg" aria-label="Enlarge: lab group">
-            <img src="./img/lab-dept-winter-t.jpg" alt="Lab group at the Department of Poultry Science" loading="lazy" />
-            <figcaption>Lab group · Poultry Science</figcaption>
-          </button>
-        </div>
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="eyebrow reveal"><span class="n">05</span>Gallery</div>
+      <h2 class="reveal">In the lab &amp; in the field.</h2>
+      <p class="lede reveal">Research, conferences, and the people I work alongside. Tap any photo to enlarge.</p>
+      <div class="grid reveal">
+        <button class="gphoto g-wide" data-full="./img/lab-dept.jpg" aria-label="Enlarge: Kim Lab, Department of Poultry Science"><img src="./img/lab-dept-t.jpg" alt="Kim Lab group at the UGA Department of Poultry Science sign" loading="lazy" /><figcaption>Kim Lab · Dept. of Poultry Science</figcaption></button>
+        <button class="gphoto g-tall" data-full="./img/grad.jpg" aria-label="Enlarge: doctoral hooding"><img src="./img/grad-t.jpg" alt="Deependra Paneru in doctoral regalia with his advisor" loading="lazy" /><figcaption>Doctoral hooding</figcaption></button>
+        <button class="gphoto g-sq" data-full="./img/psa-awards-2023.jpg" aria-label="Enlarge: PSA Awards 2023"><img src="./img/psa-awards-2023-t.jpg" alt="Lab group at the Poultry Science Association Awards 2023" loading="lazy" /><figcaption>PSA Awards · 2023</figcaption></button>
+        <button class="gphoto g-sq" data-full="./img/psa-banquet.jpg" aria-label="Enlarge: PSA Annual Meeting 2024"><img src="./img/psa-banquet-t.jpg" alt="Lab group at the Poultry Science Association banquet 2024" loading="lazy" /><figcaption>PSA Annual Meeting · 2024</figcaption></button>
+        <button class="gphoto g-med" data-full="./img/lab-galthouse.jpg" aria-label="Enlarge: PSA Annual Meeting, Louisville"><img src="./img/lab-galthouse-t.jpg" alt="Lab group outside the Galt House in Louisville" loading="lazy" /><figcaption>PSA Meeting · Louisville, KY</figcaption></button>
+        <button class="gphoto g-sq" data-full="./img/lab-dinner.jpg" aria-label="Enlarge: lab dinner"><img src="./img/lab-dinner-t.jpg" alt="Lab group at dinner" loading="lazy" /><figcaption>Lab dinner · Athens, GA</figcaption></button>
+        <button class="gphoto g-sq" data-full="./img/lab-dept-winter.jpg" aria-label="Enlarge: lab group"><img src="./img/lab-dept-winter-t.jpg" alt="Lab group at the Department of Poultry Science" loading="lazy" /><figcaption>Lab group · Poultry Science</figcaption></button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="leadership">
-      <div class="card">
-        <div class="eyebrow reveal">Leadership</div>
-        <h2 class="reveal">Leadership &amp; service</h2>
-        <div class="lead-grid reveal">
-          <div class="lead-card">
-            <div class="yr">2023 — 2026</div>
-            <h3>Project Lead, ACRB Regeneration Initiative</h3>
-            <div class="org">Athens Canadian Random Bred conservation program, University of Georgia</div>
-            <p>Led regeneration and conservation work for a heritage poultry breed, coordinating breeding management, data collection, and health monitoring in support of research, teaching, and outreach.</p>
-          </div>
-          <div class="lead-card">
-            <div class="yr">2023 — 2026</div>
-            <h3>International Workshops &amp; Academic Events Support</h3>
-            <div class="org">Department of Poultry Science, University of Georgia</div>
-            <p>Supported the organization and delivery of international workshops and academic events.</p>
-          </div>
-        </div>
+  <!-- ============ LEADERSHIP ============ -->
+  <section id="leadership" style="padding-top:0">
+    <div class="wrap">
+      <div class="eyebrow reveal"><span class="n">06</span>Leadership</div>
+      <h2 class="reveal">Leadership &amp; service.</h2>
+      <div class="lead-grid">
+        <article class="lead reveal">
+          <div class="yr">2023 — 2026</div>
+          <h3>Project Lead, ACRB Regeneration Initiative</h3>
+          <div class="org">Athens Canadian Random Bred conservation program · University of Georgia</div>
+          <p>Led a departmental project on the regeneration and conservation of heritage poultry breeds, coordinating breeding management, data collection, and health monitoring in support of the department’s research, teaching, and outreach missions.</p>
+        </article>
+        <article class="lead reveal">
+          <div class="yr">2023 — 2026</div>
+          <h3>International Workshops &amp; Academic Events</h3>
+          <div class="org">Department of Poultry Science · University of Georgia</div>
+          <p>Volunteered in the organization and execution of international workshops and academic events hosted by the Department of Poultry Science, University of Georgia.</p>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="awards">
-      <div class="card">
-        <div class="eyebrow reveal">Recognition</div>
-        <h2 class="reveal">Awards</h2>
-        <div class="award-cards reveal">
-          <figure>
-            <img class="lb-trigger" data-full="./img/award-psa.jpg" src="./img/award-psa.jpg" alt="Deependra Paneru with a Poultry Science Association Certificate of Excellence" loading="lazy" />
-            <figcaption>Certificate of Excellence · PSA 2024</figcaption>
-          </figure>
-          <figure>
-            <img class="lb-trigger" data-full="./img/award-ippe.jpg" src="./img/award-ippe.jpg" alt="Deependra Paneru with an International Poultry Scientific Forum Certificate of Excellence" loading="lazy" />
-            <figcaption>Certificate of Excellence · IPSF 2025</figcaption>
-          </figure>
+  <!-- ============ AWARDS ============ -->
+  <section id="awards">
+    <div class="wrap">
+      <div class="eyebrow reveal"><span class="n">07</span>Recognition</div>
+      <h2 class="reveal">Honors &amp; awards.</h2>
+      <div class="awards-grid">
+        <div class="certs reveal">
+          <figure class="cert"><img data-full="./img/award-psa.jpg" src="./img/award-psa.jpg" alt="Deependra Paneru with a Poultry Science Association Certificate of Excellence" loading="lazy" /><figcaption>Certificate of Excellence · PSA 2024</figcaption></figure>
+          <figure class="cert"><img data-full="./img/award-ippe.jpg" src="./img/award-ippe.jpg" alt="Deependra Paneru with an International Poultry Scientific Forum Certificate of Excellence" loading="lazy" /><figcaption>Certificate of Excellence · IPSF 2025</figcaption></figure>
         </div>
-        <div class="honors reveal">
-          <h3>Selected honors</h3>
-          <div class="row">
-            <div class="t">Certificate of Excellence, Oral Presentation</div>
-            <div class="s">2025 International Poultry Scientific Forum</div>
-            <div class="p">Comparative analysis of body composition and bone microarchitecture in wild-type and restricted ovulator hens.</div>
+        <div class="reveal">
+          <div class="honor">
+            <div class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 13.5 7 22l5-3 5 3-2-8.5"/></svg></div>
+            <div><div class="t">Certificate of Excellence — Oral Presentation</div><div class="s">2025 International Poultry Scientific Forum</div><div class="p">Comparative analysis of body composition and bone microarchitecture in wild-type and restricted ovulator hens.</div></div>
           </div>
-          <div class="row">
-            <div class="t">Certificate of Excellence, Oral Presentation</div>
-            <div class="s">2024 Poultry Science Association Annual Meeting</div>
-            <div class="p">Effects of subclinical mycotoxin exposure and coccidial challenge on growth performance, body composition, gut health and egg production during pullet-to-layer transition period.</div>
+          <div class="honor">
+            <div class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 13.5 7 22l5-3 5 3-2-8.5"/></svg></div>
+            <div><div class="t">Certificate of Excellence — Oral Presentation</div><div class="s">2024 Poultry Science Association Annual Meeting</div><div class="p">Effects of subclinical mycotoxin exposure and coccidial challenge on growth performance, body composition, gut health and egg production during pullet-to-layer transition period.</div></div>
           </div>
-          <div class="row">
-            <div class="t">First Place, Poster Presentation</div>
-            <div class="s">2024 Graduate Student Forum, University of Georgia</div>
-            <div class="p">Effects of deoxynivalenol-contaminated corn DDGS on growth performance, gut health, and immune response in pullets.</div>
+          <div class="honor">
+            <div class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
+            <div><div class="t">First Place — Poster Presentation</div><div class="s">2024 Graduate Student Forum, University of Georgia</div><div class="p">Effects of deoxynivalenol-contaminated corn DDGS on growth performance, gut health, and immune response in pullets.</div></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="publications">
-      <div class="card">
-        <div class="pub-head">
-          <div>
-            <div class="eyebrow reveal">Publications</div>
-            <h2 class="reveal">Peer-reviewed work</h2>
-          </div>
-          <div class="r reveal">
-            <span class="sync loading" id="sync"><span class="dot"></span><span id="sync-text">Syncing from OpenAlex…</span></span>
-            <a href="https://scholar.google.com/citations?user=zL19zlEAAAAJ&hl=en" target="_blank" rel="noopener" style="font-size:12.5px">Full list on Google Scholar ↗</a>
-          </div>
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications" style="padding-top:0">
+    <div class="wrap">
+      <div class="pub-top">
+        <div>
+          <div class="eyebrow reveal"><span class="n">08</span>Publications</div>
+          <h2 class="reveal">Peer-reviewed work.</h2>
         </div>
-
-        <div class="pub-tabs reveal">
-          <button class="pub-tab on" id="tab-journal" aria-pressed="true">Journal Articles · 25</button>
-          <button class="pub-tab" id="tab-conf" aria-pressed="false">Conference Presentations · 25</button>
-        </div>
-
-        <div class="controls reveal">
-          <input type="text" class="search" id="search" placeholder="Search by title, journal, year, or co-author…" aria-label="Search publications" />
-          <button class="toggle" id="fa-toggle" aria-pressed="false"><span class="box"></span>First-author only</button>
-        </div>
-
-        <div class="timeline" id="pub-list" aria-live="polite"></div>
-
-        <noscript>
-          <p class="empty">Publication list requires JavaScript. View the complete, up-to-date list on
-          <a href="https://scholar.google.com/citations?user=zL19zlEAAAAJ&hl=en">Google Scholar</a> or
-          <a href="https://orcid.org/0000-0002-2780-3933">ORCID</a>.</p>
-        </noscript>
-      </div>
-    </section>
-
-    <section id="service">
-      <div class="card">
-        <div class="eyebrow reveal">Service</div>
-        <h2 class="reveal">Professional service</h2>
-        <div class="service-grid reveal">
-          <div>
-            <h3>Memberships</h3>
-            <div class="mem-list">
-              <div class="row2"><span class="tick"></span>Poultry Science Association (PSA)</div>
-              <div class="row2"><span class="tick"></span>World Poultry Science Association (WPSA)</div>
-              <div class="row2"><span class="tick"></span>International Scientific Association for Probiotics and Prebiotics (ISAPP)</div>
-            </div>
-          </div>
-          <div>
-            <h3>Peer review · 15 manuscripts, 2024–2026</h3>
-            <div class="review-stats">
-              <div class="rs"><b>5</b><span>2024 · 3 journals</span></div>
-              <div class="rs"><b>9</b><span>2025 · 7 journals</span></div>
-              <div class="rs"><b>1</b><span>2026 · 1 journal</span></div>
-            </div>
-            <p class="small">Ad hoc reviewer for Veterinary and Animal Science, Poultry Science, Scientific Reports, BMC Microbiology, Frontiers in Veterinary Science, and Veterinary Medicine and Science.</p>
-          </div>
+        <div class="sync-box reveal">
+          <span class="sync loading" id="sync"><span class="dot"></span><span id="sync-text">Syncing from OpenAlex…</span></span>
+          <a href="https://scholar.google.com/citations?user=zL19zlEAAAAJ&hl=en" target="_blank" rel="noopener" style="font-size:13px">Full list on Google Scholar ↗</a>
         </div>
       </div>
-    </section>
 
-    <section id="contact" class="contact">
-      <div class="card">
-        <div class="eyebrow reveal">Contact</div>
-        <h2 class="reveal">Let's connect</h2>
-        <p class="contact-line reveal"><a href="mailto:dpaneru@uga.edu">dpaneru@uga.edu</a></p>
-        <p class="contact-sub reveal">Department of Poultry Science · Athens, Georgia</p>
-        <div class="contact-links reveal">
+      <div class="toolbar">
+        <div class="seg" role="tablist" aria-label="Publication type">
+          <button id="tab-journal" class="on" role="tab" aria-selected="true">Journal articles<span class="c" id="c-journal">28</span></button>
+          <button id="tab-conf" role="tab" aria-selected="false">Conference talks &amp; posters<span class="c" id="c-conf">35</span></button>
+        </div>
+        <input type="text" class="search" id="search" placeholder="Search title, journal, year, or co-author…" aria-label="Search publications" />
+        <button class="toggle" id="fa-toggle" aria-pressed="false"><span class="box"></span>First-author</button>
+      </div>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+
+      <div class="timeline" id="pub-list" aria-live="polite"></div>
+
+      <noscript>
+        <p class="empty">The publication list needs JavaScript. See the complete list on
+        <a href="https://scholar.google.com/citations?user=zL19zlEAAAAJ&hl=en">Google Scholar</a> or
+        <a href="https://orcid.org/0000-0002-2780-3933">ORCID</a>.</p>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE ============ -->
+  <section id="service" style="padding-top:0">
+    <div class="wrap">
+      <div class="eyebrow reveal"><span class="n">09</span>Service</div>
+      <h2 class="reveal">Professional service.</h2>
+      <div class="service-grid">
+        <div class="panel reveal">
+          <h3>Memberships</h3>
+          <div class="mem">
+            <div>Poultry Science Association (PSA)</div>
+            <div>World Poultry Science Association (WPSA)</div>
+            <div>International Scientific Association for Probiotics and Prebiotics (ISAPP)</div>
+          </div>
+        </div>
+        <div class="panel reveal">
+          <h3>Peer review · 2024 — 2026</h3>
+          <div class="rev-stats">
+            <div class="rs"><b>23</b><span>Manuscripts</span></div>
+            <div class="rs"><b>8</b><span>Journals</span></div>
+            <div class="rs"><b>12</b><span>Poultry Science</span></div>
+          </div>
+          <p>Ad hoc reviewer for Poultry Science, Veterinary and Animal Science, Veterinary Medicine and Science, Frontiers in Physiology, Frontiers in Veterinary Science, Scientific Reports, BMC Microbiology, and the Pakistan Journal of Zoology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <div class="eyebrow"><span class="n">10</span>Contact</div>
+        <h2>Let's work together.</h2>
+        <a class="mail" href="mailto:dpaneru@uga.edu">dpaneru@uga.edu</a>
+        <p class="where">Department of Poultry Science · Athens, Georgia</p>
+        <div class="pills">
           <a href="https://scholar.google.com/citations?user=zL19zlEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://orcid.org/0000-0002-2780-3933" target="_blank" rel="noopener">ORCID</a>
           <a href="https://www.researchgate.net/profile/Deependra-Paneru" target="_blank" rel="noopener">ResearchGate</a>
           <a href="https://www.linkedin.com/in/panerud/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <footer><div class="fw">© <span id="year"></span> Deependra Paneru · Athens, Georgia<br/>Publication data syncs automatically from OpenAlex · ORCID 0000-0002-2780-3933</div></footer>
-  </main>
-</div>
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Deependra Paneru · Athens, Georgia</span>
+    <span>Last updated <time class="last-updated" datetime="2026-10-03T17:44:28.504Z">October 3, 2026</time> · publications sync live from OpenAlex</span>
+  </div>
+</footer>
 
-<!-- ============ Mobile tab bar ============ -->
 <nav class="tabbar" aria-label="Quick navigation">
   <a href="#about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>About</a>
-  <a href="#experience"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Exp.</a>
-  <a href="#gallery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5-9 9"/></svg>Gallery</a>
+  <a href="#experience"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Work</a>
+  <a href="#research"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6M10 3v5.5L5.5 17a2 2 0 0 0 1.8 3h9.4a2 2 0 0 0 1.8-3L14 8.5V3"/></svg>Lab</a>
   <a href="#publications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17.5A2.5 2.5 0 0 1 17.5 22H6.5A2.5 2.5 0 0 1 4 19.5v-15z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>Papers</a>
   <a href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Contact</a>
 </nav>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Enlarged photo">
-  <button class="lb-close" id="lb-close" aria-label="Close">×</button>
+  <button class="lb-btn lb-close" id="lb-close" aria-label="Close">×</button>
+  <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous photo">‹</button>
+  <button class="lb-btn lb-next" id="lb-next" aria-label="Next photo">›</button>
   <img id="lb-img" src="" alt="" />
   <div class="lb-cap" id="lb-cap"></div>
 </div>
 
 <script>
+/* ---------- Lightbox with prev/next ---------- */
 (function () {
   "use strict";
-  var lb = document.getElementById("lb");
-  var lbImg = document.getElementById("lb-img");
-  var lbCap = document.getElementById("lb-cap");
-  var closeBtn = document.getElementById("lb-close");
-  if (!lb) return;
-  var lastFocus = null;
+  var lb = document.getElementById("lb"), lbImg = document.getElementById("lb-img"), lbCap = document.getElementById("lb-cap");
+  var closeBtn = document.getElementById("lb-close"), prevBtn = document.getElementById("lb-prev"), nextBtn = document.getElementById("lb-next");
+  var items = Array.prototype.slice.call(document.querySelectorAll("[data-full]"));
+  var idx = -1, lastFocus = null;
   function capFor(el) {
     var fc = el.querySelector ? el.querySelector("figcaption") : null;
     if (fc) return fc.textContent.trim();
@@ -757,28 +757,31 @@
     if (fig) { var c = fig.querySelector("figcaption"); if (c) return c.textContent.trim(); }
     return el.getAttribute("alt") || "";
   }
-  function open(full, cap, alt) {
-    lbImg.src = full; lbImg.alt = alt || cap || "";
-    lbCap.textContent = cap || "";
-    lb.classList.add("open");
-    document.body.style.overflow = "hidden";
-    closeBtn.focus();
+  function show(i) {
+    idx = (i + items.length) % items.length;
+    var el = items[idx], img = el.tagName === "IMG" ? el : el.querySelector("img");
+    lbImg.src = el.getAttribute("data-full"); lbImg.alt = (img && img.alt) || "";
+    lbCap.textContent = capFor(el);
+  }
+  function open(i) {
+    lastFocus = items[i]; show(i);
+    lb.classList.add("open"); document.body.style.overflow = "hidden"; closeBtn.focus();
   }
   function close() {
-    lb.classList.remove("open");
-    lbImg.src = "";
-    document.body.style.overflow = "";
+    lb.classList.remove("open"); lbImg.src = ""; document.body.style.overflow = "";
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
-  document.querySelectorAll("[data-full]").forEach(function (el) {
-    el.addEventListener("click", function () {
-      lastFocus = el;
-      open(el.getAttribute("data-full"), capFor(el), el.getAttribute("alt") || (el.querySelector("img") && el.querySelector("img").alt));
-    });
-  });
+  items.forEach(function (el, i) { el.addEventListener("click", function () { open(i); }); });
   closeBtn.addEventListener("click", close);
+  prevBtn.addEventListener("click", function () { show(idx - 1); });
+  nextBtn.addEventListener("click", function () { show(idx + 1); });
   lb.addEventListener("click", function (e) { if (e.target === lb) close(); });
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && lb.classList.contains("open")) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") close();
+    else if (e.key === "ArrowLeft") show(idx - 1);
+    else if (e.key === "ArrowRight") show(idx + 1);
+  });
 })();
 </script>
 
@@ -787,63 +790,78 @@
   "use strict";
   var ORCID = "0000-0002-2780-3933";
 
+  /* ---------- Curated lists (from the CV — always accurate, instant) ---------- */
   var JOURNAL = [
-    { y:2026, first:false, a:"Gyawali, I., M. K. Sharma, S. Gudidoddi, D. Goo, D. J. Lee, D. Paneru, Y. Kim, W. K. Kim.", t:"Dietary Artemisia annua leaf powder modulates intestinal response and cecal microbiota of broiler chickens during peak Eimeria infection.", v:"Poultry Science", vp:"105:107061" },
-    { y:2026, first:true, a:"Paneru, D., M. K. Sharma, H. Shi, D. Goo, J. Lee, R. Shanmugasundaram, W. K. Kim.", t:"Interactive effects of the feed-borne mycotoxin deoxynivalenol and a mixed-species Eimeria challenge on layer pullets during the transition to lay.", v:"Poultry Science", vp:"105:106724" },
-    { y:2026, first:true, a:"Paneru, D., D. White, M. Sharma, J. Gonzalez, W. Kim.", t:"Effect of replacing conventional corn with corn containing thermostable α-amylase enzyme (AMY797E) in standard and low-energy diets in laying hens.", v:"Animals", vp:"16:582" },
-    { y:2026, first:true, a:"Paneru, D., F. S. Mahdavi, V. P. R. Keshavareddy, S. K. R. Ragyari, W. K. Kim.", t:"Comparative analysis of body composition and bone microarchitecture in wild-type and restricted ovulator hens.", v:"Journal of Applied Poultry Research", vp:"35:100653" },
-    { y:2025, first:true, a:"Paneru, D., M. K. Sharma, D. Goo, H. Shi, T. J. Applegate, L. Chai, R. Shanmugasundaram, W. K. Kim.", t:"Interactive effects of dietary deoxynivalenol and coccidial infection on growth performance, immune response, oxidative status, and gut health in pullets.", v:"Poultry Science", vp:"104:105462" },
-    { y:2025, first:true, a:"Paneru, D., D. L. White, M. K. Sharma, J. M. Gonzalez, W. K. Kim.", t:"Evaluation of Enogen corn as a replacement for conventional corn in standard and energy-deficient diets for pullets.", v:"Journal of Applied Poultry Research", vp:"34:100578" },
-    { y:2025, first:false, a:"Wang, J., H. Shi, D. White, H. Ko, D. Paneru, M. Sharma, R. Patterson, W. K. Kim.", t:"Effects of liquid yeast cell wall on growth performance, intestinal development, immunity, and cecal Salmonella population of broilers.", v:"Poultry Science", vp:"104:105551" },
-    { y:2025, first:false, a:"Lee, J., H. Ko, D. Goo, M. K. Sharma, G. Liu, H. Shi, D. Paneru, V. S. R. Choppa, B. Maertens, C. Sol, W. K. Kim.", t:"Effects of dietary supplementation with a polyherbal based product on sporozoites viability and on growth performance, lesion score, gut permeability, oocyst shedding count, tight junction, pro-inflammatory cytokine, and antioxidant enzyme in broiler chickens challenged with Eimeria spp.", v:"Poultry Science", vp:"104:105002" },
-    { y:2025, first:false, a:"Lee, J., D. Goo, M. K. Sharma, H. Ko, H. Shi, D. Paneru, V. S. R. Choppa, G. Liu, W. K. Kim.", t:"Effects of graded yeast cell wall supplementation on growth performance, immunity and intestinal development of broiler chickens raised in floor pens for 42 days.", v:"Poultry Science", vp:"104:104695" },
-    { y:2025, first:false, a:"Shuaib, M., A. Hafeez, D. Paneru, W. K. Kim, M. Tahir, A. Pokoo-Aikins, O. Ullah, A. Sufyan.", t:"Exploring the potential effects of soybean by-product (hulls) and enzyme (beta-mannanase) on laying hens during peak production.", v:"Animals", vp:"15:98" },
-    { y:2025, first:true, a:"Paneru, D., M. K. Sharma, H. Shi, D. Goo, V. S. R. Choppa, I. Gyawali, R. Shanmugasundaram, W. K. Kim.", t:"Effects of deoxynivalenol contaminated corn distiller's dried grains with solubles on growth performance, body composition, immunological response, and gastrointestinal health in young pullets.", v:"Poultry Science", vp:"104:104611" },
-    { y:2024, first:false, a:"Goo, D., J. Lee, D. Paneru, M. K. Sharma, H. R. Rafieian-Naeini, F. S. Mahdavi, I. Gyawali, S. R. Gudidoddi, G. Han, W. K. Kim.", t:"Effects of branched-chain amino acid imbalance and dietary valine and isoleucine supplementation in modified corn-soybean meal diets with corn distillers dried grains with solubles on growth performance, carcass quality, intestinal health, and cecal microbiome in Cobb 500.", v:"Poultry Science", vp:"103:104483" },
-    { y:2024, first:false, a:"Shi, H., V. S. R. Choppa, D. Paneru, W. K. Kim.", t:"Effects of phytase and 25-hydroxycholecalciferol supplementation in broilers fed calcium-phosphorous deficient diets, with or without Eimeria challenge, on growth performance, body composition, bone development, and gut health.", v:"Animal Nutrition", vp:"18" },
-    { y:2024, first:false, a:"Shi, H., D. Paneru, M. K. Sharma, J. Lee, H. R. R. Naeini, F. S. Mahdavi, W. K. Kim.", t:"Phytase, 25-hydroxyvitamin D3 and cocci vaccination to broilers fed a calcium and phosphorus-reduced diet under Eimeria spp. challenge: effects on growth performance and intestinal health.", v:"Poultry Science", vp:"103:104326" },
-    { y:2024, first:false, a:"Goo, D., A. K. Singh, J. Choi, M. K. Sharma, D. Paneru, J. Lee, H. R. Katha, H. Zhuang, B. Kong, B. Bowker, W. K. Kim.", t:"Different dietary branched-chain amino acid ratios, crude protein levels, and protein sources can affect the growth performance and meat yield in broilers.", v:"Poultry Science", vp:"103:104313" },
-    { y:2024, first:false, a:"Lee, N., M. K. Sharma, D. Paneru, E. D. Ward, W. K. Kim, J. H. Suh.", t:"Metabolomic analysis reveals altered amino acid metabolism and mechanisms underlying Eimeria infection in laying hens.", v:"Poultry Science", vp:"103:104244" },
-    { y:2024, first:true, a:"Paneru, D., G. Tellez-Isaias, W. G. Bottje, E. Asiamah, A. A. A. Abdel-Wareth, M. Salahuddin, J. Lohakare.", t:"Immune modulation and cecal microbiome changes in broilers fed with fenugreek seeds and Bacillus-based probiotics.", v:"Poultry Science", vp:"103:104130" },
-    { y:2024, first:false, a:"Sharma, M. K., J. Lee, H. Shi, H. Ko, D. Goo, D. Paneru, S. D. Holladay, R. M. Gogal, W. K. Kim.", t:"Effect of dietary inclusion of 25-hydroxyvitamin D3 and vitamin E on performance, gut health, oxidative status, and immune response in laying hens infected with coccidiosis.", v:"Poultry Science", vp:"103:104033" },
-    { y:2024, first:false, a:"Goo, D., H. Ko, M. K. Sharma, V. S. R. Choppa, D. Paneru, H. Shi, W. K. Kim.", t:"Comparison of necrotic enteritis effects on growth performance and intestinal health in two different meat-type chicken strains Athens Canadian Random Bred and Cobb 500.", v:"Poultry Science", vp:"103:103599" },
-    { y:2024, first:true, a:"Paneru, D., M. K. Sharma, H. Shi, J. Wang, W. K. Kim.", t:"Aflatoxin B1 impairs bone mineralization in broiler chickens.", v:"Toxins", vp:"16:78" },
-    { y:2024, first:true, a:"Paneru, D., G. Tellez-Isaias, W. G. Bottje, E. Asiamah, A. A. A. Abdel-Wareth, M. Salahuddin, J. Lohakare.", t:"Modulation of immune response and cecal microbiota by dietary fenugreek seeds in broilers.", v:"Veterinary Sciences", vp:"11:57" },
-    { y:2023, first:true, a:"Paneru, D., G. Tellez-Isaias, M. A. Arreguin-Nava, N. Romano, W. G. Bottje, E. Asiamah, A. A. A. Abdel-Wareth, J. Lohakare.", t:"Effect of fenugreek seeds and Bacillus-based direct-fed microbials on the growth performance, blood biochemicals, and intestinal histomorphology of broiler chickens.", v:"Frontiers in Veterinary Science", vp:"10:1298587" },
-    { y:2023, first:false, a:"Shuaib, M., D. Paneru, A. Hafeez, M. Tahir, W. K. Kim.", t:"The chemical composition of soyhulls and their effect on amino acid and nutrient digestibility in laying hens during the peak of production.", v:"Animals", vp:"13:2808" },
-    { y:2023, first:false, a:"Choi, J., D. Goo, M. K. Sharma, H. Ko, G. Liu, D. Paneru, V. S. R. Choppa, J. Lee, W. K. Kim.", t:"Effects of different Eimeria inoculation doses on growth performance, daily feed intake, gut health, gut microbiota, foot pad dermatitis, and Eimeria gene expression in broilers raised in floor pens for 35 days.", v:"Animals", vp:"13:2237" },
-    { y:2022, first:true, a:"Paneru, D., G. Tellez-Isaias, N. Romano, G. Lohakare, W. G. Bottje, J. Lohakare.", t:"Effect of graded levels of fenugreek (Trigonella foenum-graecum L.) seeds on the growth performance, hematological parameters, and intestinal histomorphology of broiler chickens.", v:"Veterinary Sciences", vp:"9:207" }
+    {"y":2026,"first":true,"a":"Paneru, D., V. S. R. Choppa, J. Lee, H. Ko, M. K. Sharma, W. K. Kim.","t":"Effects of dietary protease and protease-probiotic combination on growth performance, nutrient digestibility, and intestinal immune response in broiler chickens.","v":"Poultry Science","vp":"107540"},
+    {"y":2026,"first":false,"a":"Gyawali, I., M. K. Sharma, S. Gudidoddi, D. Goo, D. J. Lee, D. Paneru, Y. Kim, W. K. Kim.","t":"Dietary Artemisia annua leaf powder modulates intestinal response and cecal microbiota of broiler chickens during peak Eimeria infection.","v":"Poultry Science","vp":"105:107061"},
+    {"y":2026,"first":true,"a":"Paneru, D., M. K. Sharma, H. Shi, D. Goo, J. Lee, R. Shanmugasundaram, W. K. Kim.","t":"Interactive effects of the feed-borne mycotoxin deoxynivalenol and a mixed-species Eimeria challenge on layer pullets during the transition to lay.","v":"Poultry Science","vp":"105:106724"},
+    {"y":2026,"first":true,"a":"Paneru, D., D. White, M. Sharma, J. Gonzalez, W. Kim.","t":"Effect of replacing conventional corn with corn containing thermostable α-amylase enzyme (AMY797E) in standard and low-energy diets in laying hens.","v":"Animals","vp":"16:582"},
+    {"y":2026,"first":true,"a":"Paneru, D., F. S. Mahdavi, V. P. R. Keshavareddy, S. K. R. Ragyari, W. K. Kim.","t":"Comparative analysis of body composition and bone microarchitecture in wild-type and restricted ovulator hens.","v":"Journal of Applied Poultry Research","vp":"35:100653"},
+    {"y":2025,"first":true,"a":"Paneru, D., D. L. White, M. K. Sharma, J. M. Gonzalez, W. K. Kim.","t":"Evaluation of Enogen corn as a replacement for conventional corn in standard and energy-deficient diets for pullets.","v":"Journal of Applied Poultry Research","vp":"34:100578"},
+    {"y":2025,"first":false,"a":"Goo, D., J. Choi, J. Lee, M. K. Sharma, D. Paneru, H. R. Rafieian-Naeini, H. Zhuang, B. Kong, B. Bowker, C. W. Ritz, W. K. Kim.","t":"Additional isoleucine without valine in an imbalanced branched-chain amino acid diet further exacerbates its negative effects in broilers.","v":"Journal of Applied Poultry Research","vp":"34:100631"},
+    {"y":2025,"first":false,"a":"Wang, J., H. Shi, D. White, H. Ko, D. Paneru, M. Sharma, R. Patterson, W. K. Kim.","t":"Effects of liquid yeast cell wall on growth performance, intestinal development, immunity, and cecal Salmonella population of broilers.","v":"Poultry Science","vp":"104:105551"},
+    {"y":2025,"first":false,"a":"Choppa, V. S. R., H. R. R. Naeini, D. J. Lee, H. R. Katha, H. Ko, D. Paneru, Y. Kim, W. K. Kim.","t":"Effect of Eimeria spp. and Staphylococcus aureus challenge on cecal microbiome in broilers.","v":"Poultry Science","vp":"104:105814"},
+    {"y":2025,"first":true,"a":"Paneru, D., M. K. Sharma, D. Goo, H. Shi, T. J. Applegate, L. Chai, R. Shanmugasundaram, W. K. Kim.","t":"Interactive effects of dietary deoxynivalenol and coccidial infection on growth performance, immune response, oxidative status, and gut health in pullets.","v":"Poultry Science","vp":"104:105462"},
+    {"y":2025,"first":false,"a":"Lee, J., H. Ko, D. Goo, M. K. Sharma, G. Liu, H. Shi, D. Paneru, V. S. R. Choppa, B. Maertens, C. Sol, W. K. Kim.","t":"Effects of dietary supplementation with a polyherbal based product on sporozoites viability and on growth performance, lesion score, gut permeability, oocyst shedding count, tight junction, pro-inflammatory cytokine, and antioxidant enzyme in broiler chickens challenged with Eimeria spp.","v":"Poultry Science","vp":"104:105002"},
+    {"y":2025,"first":false,"a":"Lee, J., D. Goo, M. K. Sharma, H. Ko, H. Shi, D. Paneru, V. S. R. Choppa, G. Liu, W. K. Kim.","t":"Effects of graded yeast cell wall supplementation on growth performance, immunity and intestinal development of broiler chickens raised in floor pens for 42 days.","v":"Poultry Science","vp":"104:104695"},
+    {"y":2025,"first":false,"a":"Shuaib, M., A. Hafeez, D. Paneru, W. K. Kim, M. Tahir, A. Pokoo-Aikins, O. Ullah, A. Sufyan.","t":"Exploring the potential effects of soybean by-product (hulls) and enzyme (beta-mannanase) on laying hens during peak production.","v":"Animals","vp":"15:98"},
+    {"y":2025,"first":true,"a":"Paneru, D., M. K. Sharma, H. Shi, D. Goo, V. S. R. Choppa, I. Gyawali, R. Shanmugasundaram, W. K. Kim.","t":"Effects of deoxynivalenol contaminated corn distiller's dried grains with solubles on growth performance, body composition, immunological response, and gastrointestinal health in young pullets.","v":"Poultry Science","vp":"104:104611"},
+    {"y":2024,"first":false,"a":"Goo, D., J. Lee, D. Paneru, M. K. Sharma, H. R. Rafieian-Naeini, F. S. Mahdavi, I. Gyawali, S. R. Gudidoddi, G. Han, W. K. Kim.","t":"Effects of branched-chain amino acid imbalance and dietary valine and isoleucine supplementation in modified corn-soybean meal diets with corn distillers dried grains with solubles on growth performance, carcass quality, intestinal health, and cecal microbiome in Cobb 500.","v":"Poultry Science","vp":"103:104483"},
+    {"y":2024,"first":false,"a":"Shi, H., V. S. R. Choppa, D. Paneru, W. K. Kim.","t":"Effects of phytase and 25-hydroxycholecalciferol supplementation in broilers fed calcium-phosphorous deficient diets, with or without Eimeria challenge, on growth performance, body composition, bone development, and gut health.","v":"Animal Nutrition","vp":"18"},
+    {"y":2024,"first":false,"a":"Shi, H., D. Paneru, M. K. Sharma, J. Lee, H. R. R. Naeini, F. S. Mahdavi, W. K. Kim.","t":"Phytase, 25-hydroxyvitamin D3 and cocci vaccination to broilers fed a calcium and phosphorus-reduced diet under Eimeria spp. challenge: effects on growth performance and intestinal health.","v":"Poultry Science","vp":"103:104326"},
+    {"y":2024,"first":false,"a":"Goo, D., A. K. Singh, J. Choi, M. K. Sharma, D. Paneru, J. Lee, H. R. Katha, H. Zhuang, B. Kong, B. Bowker, W. K. Kim.","t":"Different dietary branched-chain amino acid ratios, crude protein levels, and protein sources can affect the growth performance and meat yield in broilers.","v":"Poultry Science","vp":"103:104313"},
+    {"y":2024,"first":false,"a":"Lee, N., M. K. Sharma, D. Paneru, E. D. Ward, W. K. Kim, J. H. Suh.","t":"Metabolomic analysis reveals altered amino acid metabolism and mechanisms underlying Eimeria infection in laying hens.","v":"Poultry Science","vp":"103:104244"},
+    {"y":2024,"first":true,"a":"Paneru, D., G. Tellez-Isaias, W. G. Bottje, E. Asiamah, A. A. A. Abdel-Wareth, M. Salahuddin, J. Lohakare.","t":"Immune modulation and cecal microbiome changes in broilers fed with fenugreek seeds and Bacillus-based probiotics.","v":"Poultry Science","vp":"103:104130"},
+    {"y":2024,"first":false,"a":"Sharma, M. K., J. Lee, H. Shi, H. Ko, D. Goo, D. Paneru, S. D. Holladay, R. M. Gogal, W. K. Kim.","t":"Effect of dietary inclusion of 25-hydroxyvitamin D3 and vitamin E on performance, gut health, oxidative status, and immune response in laying hens infected with coccidiosis.","v":"Poultry Science","vp":"103:104033"},
+    {"y":2024,"first":false,"a":"Goo, D., H. Ko, M. K. Sharma, V. S. R. Choppa, D. Paneru, H. Shi, W. K. Kim.","t":"Comparison of necrotic enteritis effects on growth performance and intestinal health in two different meat-type chicken strains Athens Canadian Random Bred and Cobb 500.","v":"Poultry Science","vp":"103:103599"},
+    {"y":2024,"first":true,"a":"Paneru, D., M. K. Sharma, H. Shi, J. Wang, W. K. Kim.","t":"Aflatoxin B1 impairs bone mineralization in broiler chickens.","v":"Toxins","vp":"16:78"},
+    {"y":2024,"first":true,"a":"Paneru, D., G. Tellez-Isaias, W. G. Bottje, E. Asiamah, A. A. A. Abdel-Wareth, M. Salahuddin, J. Lohakare.","t":"Modulation of immune response and cecal microbiota by dietary fenugreek seeds in broilers.","v":"Veterinary Sciences","vp":"11:57"},
+    {"y":2023,"first":true,"a":"Paneru, D., G. Tellez-Isaias, M. A. Arreguin-Nava, N. Romano, W. G. Bottje, E. Asiamah, A. A. A. Abdel-Wareth, J. Lohakare.","t":"Effect of fenugreek seeds and Bacillus-based direct-fed microbials on the growth performance, blood biochemicals, and intestinal histomorphology of broiler chickens.","v":"Frontiers in Veterinary Science","vp":"10:1298587"},
+    {"y":2023,"first":false,"a":"Shuaib, M., D. Paneru, A. Hafeez, M. Tahir, W. K. Kim.","t":"The chemical composition of soyhulls and their effect on amino acid and nutrient digestibility in laying hens during the peak of production.","v":"Animals","vp":"13:2808"},
+    {"y":2023,"first":false,"a":"Choi, J., D. Goo, M. K. Sharma, H. Ko, G. Liu, D. Paneru, V. S. R. Choppa, J. Lee, W. K. Kim.","t":"Effects of different Eimeria inoculation doses on growth performance, daily feed intake, gut health, gut microbiota, foot pad dermatitis, and Eimeria gene expression in broilers raised in floor pens for 35 days.","v":"Animals","vp":"13:2237"},
+    {"y":2022,"first":true,"a":"Paneru, D., G. Tellez-Isaias, N. Romano, G. Lohakare, W. G. Bottje, J. Lohakare.","t":"Effect of graded levels of fenugreek (Trigonella foenum-graecum L.) seeds on the growth performance, hematological parameters, and intestinal histomorphology of broiler chickens.","v":"Veterinary Sciences","vp":"9:207"}
   ];
 
   var CONFERENCE = [
-    { y:2026, first:true, a:"Paneru, D., H. Ko, I. Gyawali, D. Lee, A. Gautam, J. O. Sorbara, W. K. Kim.", t:"Redefining calcium requirements in laying hens through phytase superdosing and low-phosphorus diets.", v:"International Poultry Scientific Forum" },
-    { y:2025, first:true, a:"Paneru, D., F. S. Mahdavi, V. P. R. Keshavareddy, S. K. R. Ragyari, W. K. Kim.", t:"Comparative analysis of body composition and bone microarchitecture in wild-type and restricted ovulator hens.", v:"International Poultry Scientific Forum" },
-    { y:2025, first:true, a:"Paneru, D., O. Tejeda, W. K. Kim.", t:"Effects of Pearlzyme (Protease) supplementation on growth performance, nitrogen-corrected apparent metabolizable energy, and amino acid digestibility in broiler chickens fed reduced crude protein and amino acid diets.", v:"International Poultry Scientific Forum" },
-    { y:2025, first:true, a:"Paneru, D., V. S. R. Choppa, W. K. Kim.", t:"Effects of Pearlzyme (Protease) supplementation on growth performance, nutrient utilization, and immune response in broiler chickens.", v:"International Poultry Scientific Forum" },
-    { y:2025, first:false, a:"Ko, H., D. Paneru, M. D. Costa, V. Kuttappan, W. K. Kim.", t:"Effect of dietary supplementation of a postbiotic and phytogenic blend on laying performance and colibacillosis in laying hens challenged with avian pathogenic Escherichia coli Serotype O78.", v:"International Poultry Scientific Forum" },
-    { y:2025, first:false, a:"Rafieian-Naeini, H. R., D. Paneru, H. R. Katha, S. Carnaccini, W. K. Kim.", t:"Negative impact of Eimeria spp. on the reproductive tract of laying hens with minimal influence of mycotoxins from contaminated corn DDGS.", v:"International Poultry Scientific Forum" },
-    { y:2025, first:false, a:"Waters, C. A., R. Adhikari, J. T. Lee, D. Paneru, W. K. Kim, R. Kriseldi, M. Elliot, L. Zhang, K. Wamsley, P. Adhikari.", t:"Understanding the branched-chain amino acid interactions on bone morphology of pullets (6-12 weeks of age).", v:"International Poultry Scientific Forum" },
-    { y:2025, first:false, a:"Waters, C. A., R. Adhikari, J. T. Lee, D. Paneru, W. K. Kim, R. Kriseldi, M. Elliot, L. Zhang, K. Wamsley, P. Adhikari.", t:"Understanding the branched-chain amino acid interactions on bone morphology of pullets at 18 weeks of age.", v:"International Poultry Scientific Forum" },
-    { y:2024, first:true, a:"Paneru, D., M. Sharma, H. Shi, D. Goo, J. Lee, R. Shanmugasundaram, W. Kim.", t:"Effects of subclinical mycotoxin exposure and coccidial challenge on growth performance, body composition, gut health and egg production during pullet-to-layer transition period.", v:"Poultry Science Association Annual Meeting" },
-    { y:2024, first:true, a:"Paneru, D., H. Naeini, V. Choppa, H. Ko, F. Mahdavi, R. Shanmugasundaram, W. Kim.", t:"Effects of mycotoxin-contaminated corn distillers' dried grains with solubles on growth performance, gut health, and immune function in four to eight week old pullets.", v:"Poultry Science Association Annual Meeting" },
-    { y:2024, first:true, a:"Paneru, D., M. Sharma, H. Shi, H. Naeini, V. R. Choppa, D. Goo, R. Shanmugasundaram, W. Kim.", t:"Effect of sub-clinical mycotoxin exposure on growth performance and immune response in Eimeria-challenged pullets.", v:"International Poultry Scientific Forum" },
-    { y:2024, first:true, a:"Paneru, D., D. White, Y. Kawashima, W. Kim.", t:"Effects of Panaferd, a natural carotenoid source from Paracoccus carotinifaciens, on the performance, egg quality, yolk pigmentation, and carotenoid composition of eggs in laying hens.", v:"International Poultry Scientific Forum" },
-    { y:2024, first:false, a:"Shi, H., D. Paneru, M. Sharma, F. Mahdavi, V. Choppa, D. Goo, J. Lee, H. Ko, W. Kyun Kim.", t:"Effects of phytase, 25-hydroxyvitamin D3 and cocci vaccination on growth performance, body composition and gut integrity of broilers fed with a calcium and phosphorus-reduced diet under Eimeria spp. challenge.", v:"International Poultry Scientific Forum" },
-    { y:2024, first:false, a:"Gyawali, I., M. Sharma, S. Gududoddi, D. Paneru, D. Goo, W. Kim.", t:"Assessment of Artemisia annua supplementation for mitigating Eimeria infection and improving gut health in broiler chickens.", v:"Poultry Science Association Annual Meeting" },
-    { y:2024, first:false, a:"Goo, D., A. Singh, J. Choi, M. Sharma, D. Paneru, J. Lee, W. Kim.", t:"Effects of the different ratios of branched chain amino acids (BCAAs) on growth performance, meat quality, and intestinal health in broilers fed with low and high crude protein diet.", v:"International Poultry Scientific Forum" },
-    { y:2024, first:false, a:"Goo, D., J. Choi, G. Liu, J. Lee, M. Sharma, D. Paneru, V. Choppa, H. Shi, W. Kim.", t:"Dietary supplementation of valine and isoleucine have different effects on growth performance, carcass weight, and intestinal health in broiler chickens.", v:"Poultry Science Association Annual Meeting" },
-    { y:2024, first:false, a:"Sharma, M., J. Lee, G. Liu, H. Shi, H. Ko, D. Goo, D. Paneru, W. Kim.", t:"Dietary supplementation of 25-hydroxyvitamin D3 or Vitamin E partially alleviates the adverse effect of mixed Eimeria infection on the skeletal health parameters of laying hens.", v:"Poultry Science Association Annual Meeting" },
-    { y:2024, first:false, a:"Sharma, M., G. Liu, H. Shi, D. Goo, J. Lee, H. Ko, V. S. Choppa, D. Paneru, F. Mahdavi, H. Naeini, B. Marshall, W. Kim.", t:"Effects of Artemisia annua supplementation on performance and gut health of laying hens infected with Eimeria spp.", v:"International Poultry Scientific Forum" },
-    { y:2023, first:true, a:"Paneru, D., M. Sharma, J. Wang, W. Kim.", t:"Effects of graded levels of Aflatoxin B1 on broiler bone quality and jejunal calcium and phosphorus transporter gene expression.", v:"Poultry Science Association Annual Meeting" },
-    { y:2023, first:true, a:"Paneru, D., M. Sharma, D. Goo, J. Choi, W. Kim.", t:"Interactive effects of feeding naturally contaminated corn distillers dried grains with solubles and Eimeria infection on egg production and gut health in laying hens.", v:"International Poultry Scientific Forum" },
-    { y:2023, first:false, a:"Sharma, M., D. Paneru, W. Kim.", t:"Effects of different levels of dietary calcium on femur and keel bone mineralization of Hy-Line W-36 laying hens at post-peak production.", v:"Poultry Science Association Annual Meeting" },
-    { y:2023, first:false, a:"Goo, D., H. Shi, M. Sharma, J. Lee, G. Liu, D. Paneru, J. Choi, W. Kim.", t:"Tracking of bone mineral parameters using DEXA and MicroCT scans in two different broiler strains Cobb 500 and Ross 708 for 42 days.", v:"Poultry Science Association Annual Meeting" },
-    { y:2022, first:true, a:"Paneru, D., G. Tellez-Isaias, E. Asiamah, W. Bottje, J. Lohakare.", t:"Fenugreek (Trigonella foenum-graecum L.) seeds and Bacillus based direct-fed microbials alter the immune response and cecal microbiota in broiler chickens.", v:"Poultry Science Association Annual Meeting" },
-    { y:2022, first:false, a:"Singh, A., D. Paneru, J. Wang, W. Kim.", t:"Effects of different ratios of branched-chain amino acids on growth performance and body composition of broilers.", v:"Poultry Science Association Annual Meeting" },
-    { y:2021, first:true, a:"Paneru, D., G. Tellez-Isaias, W. Bottje, J. Lohakare.", t:"Effect of different dietary levels of fenugreek seeds powder on the growth performance of broiler chickens.", v:"Poultry Science Association Annual Meeting" }
+    {"y":2026,"first":false,"a":"Neupane, I., A. Gautam, D. Goo, I. Gyawali, D. Paneru, W. K. Kim.","t":"Evaluation of gallic acid supplementation on growth performance and gut health in broilers under coccidiosis.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2026,"first":true,"a":"Paneru, D., H. Ko, I. Gyawali, D. Lee, A. Gautam, J. O. Sorbara, W. K. Kim.","t":"Redefining calcium requirements in laying hens through phytase superdosing and low-phosphorus diets.","v":"International Poultry Scientific Forum"},
+    {"y":2026,"first":false,"a":"Lee, D., V. P. R. Keshavareddy, D. Goo, H. R. Katha, H. R. R. Naeini, I. Gyawali, S. K. R. Ragyari, I. Neupane, S. R. Gudidoddi, D. Paneru, W. K. Kim.","t":"Restricted ovulator hens as a novel experimental model of fatty liver disease.","v":"International Poultry Scientific Forum"},
+    {"y":2026,"first":false,"a":"Neupane, I., H. Ko, I. Gyawali, D. Paneru, W. K. Kim.","t":"In vitro evaluation of gallic acid against Salmonella Typhimurium.","v":"International Poultry Scientific Forum"},
+    {"y":2026,"first":false,"a":"Gyawali, I., D. Paneru, S. R. Gudidoddi, H. R. R. Naeini, I. Neupane, W. K. Kim.","t":"Evaluating black soldier fly larvae meal as an alternative sustainable protein source for broiler growth and gut health.","v":"International Poultry Scientific Forum"},
+    {"y":2026,"first":false,"a":"Shin, E. E., D. Paneru, W. K. Kim.","t":"Effect of storage temperature and duration on egg quality.","v":"International Poultry Scientific Forum"},
+    {"y":2025,"first":true,"a":"Paneru, D., H. Ko, D. Goo, I. Gyawali, H. R. Katha, I. Neupane, W. K. Kim.","t":"Interactions of deoxynivalenol, Eimeria challenge, and cyclic heat stress on productivity, egg quality, body composition, and gut health in laying hens.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2025,"first":false,"a":"Katha, H. R., V. S. R. Choppa, H. R. Rafieian-Naeini, D. Goo, H. Ko, D. Paneru, V. P. R. Keshava Reddy, W. K. Kim.","t":"Effects of different Eimeria maxima infection doses on growth performance, gut and bone health in dual-infection model of necrotic enteritis in layer pullets.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2025,"first":false,"a":"Choppa, V. S. R., J. Lee, H. R. Rafieian-Naeini, H. Ko, D. Goo, D. Paneru, H. R. Katha, W. K. Kim.","t":"Effect of oral and intraperitoneal Staphylococcus aureus on bacterial chondronecrosis and osteomyelitis, broilers’ performance, bone health and microbiome.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2025,"first":false,"a":"Gyawali, I., H. Ko, D. Goo, H. R. Katha, D. Paneru, J. Lohakare, J. Tomberlin, S. Francis, W. K. Kim.","t":"Assessment of black soldier fly larvae (BSFL) as a dietary supplement to mitigate necrotic enteritis and improve gut health in broiler chickens.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2025,"first":false,"a":"Goo, D., S. R. Gudidoddi, V. S. Choppa, D. Paneru, I. Gyawali, H. R. Katha, W. K. Kim.","t":"The inclusion rate of soybean meal and valine supplementation affect growth performance, carcass weight, body composition, and feed intake regulation in Ross 708.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2025,"first":true,"a":"Paneru, D., F. S. Mahdavi, V. P. R. Keshavareddy, S. K. R. Ragyari, W. K. Kim.","t":"Comparative analysis of body composition and bone microarchitecture in wild-type and restricted ovulator hens.","v":"International Poultry Scientific Forum"},
+    {"y":2025,"first":true,"a":"Paneru, D., O. Tejeda, W. K. Kim.","t":"Effects of Pearlzyme (Protease) supplementation on growth performance, nitrogen-corrected apparent metabolizable energy, and amino acid digestibility in broiler chickens fed reduced crude protein and amino acid diets.","v":"International Poultry Scientific Forum"},
+    {"y":2025,"first":true,"a":"Paneru, D., V. S. R. Choppa, W. K. Kim.","t":"Effects of Pearlzyme (Protease) supplementation on growth performance, nutrient utilization, and immune response in broiler chickens.","v":"International Poultry Scientific Forum"},
+    {"y":2025,"first":false,"a":"Ko, H., D. Paneru, M. D. Costa, V. Kuttappan, W. K. Kim.","t":"Effect of dietary supplementation of a postbiotic and phytogenic blend on laying performance and colibacillosis in laying hens challenged with avian pathogenic Escherichia coli Serotype O78.","v":"International Poultry Scientific Forum"},
+    {"y":2025,"first":false,"a":"Rafieian-Naeini, H. R., D. Paneru, H. R. Katha, S. Carnaccini, W. K. Kim.","t":"Negative impact of Eimeria spp. on the reproductive tract of laying hens with minimal influence of mycotoxins from contaminated corn DDGS.","v":"International Poultry Scientific Forum"},
+    {"y":2025,"first":false,"a":"Waters, C. A., R. Adhikari, J. T. Lee, D. Paneru, W. K. Kim, R. Kriseldi, M. Elliot, L. Zhang, K. Wamsley, P. Adhikari.","t":"Understanding the branched-chain amino acid interactions on bone morphology of pullets (6-12 weeks of age).","v":"International Poultry Scientific Forum"},
+    {"y":2025,"first":false,"a":"Waters, C. A., R. Adhikari, J. T. Lee, D. Paneru, W. K. Kim, R. Kriseldi, M. Elliot, L. Zhang, K. Wamsley, P. Adhikari.","t":"Understanding the branched-chain amino acid interactions on bone morphology of pullets at 18 weeks of age.","v":"International Poultry Scientific Forum"},
+    {"y":2024,"first":true,"a":"Paneru, D., M. Sharma, H. Shi, D. Goo, J. Lee, R. Shanmugasundaram, W. Kim.","t":"Effects of subclinical mycotoxin exposure and coccidial challenge on growth performance, body composition, gut health and egg production during pullet-to-layer transition period.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2024,"first":true,"a":"Paneru, D., H. Naeini, V. Choppa, H. Ko, F. Mahdavi, R. Shanmugasundaram, W. Kim.","t":"Effects of mycotoxin-contaminated corn distillers' dried grains with solubles on growth performance, gut health, and immune function in four to eight week old pullets.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2024,"first":true,"a":"Paneru, D., M. Sharma, H. Shi, H. Naeini, V. R. Choppa, D. Goo, R. Shanmugasundaram, W. Kim.","t":"Effect of sub-clinical mycotoxin exposure on growth performance and immune response in Eimeria-challenged pullets.","v":"International Poultry Scientific Forum"},
+    {"y":2024,"first":true,"a":"Paneru, D., D. White, Y. Kawashima, W. Kim.","t":"Effects of Panaferd, a natural carotenoid source from Paracoccus carotinifaciens, on the performance, egg quality, yolk pigmentation, and carotenoid composition of eggs in laying hens.","v":"International Poultry Scientific Forum"},
+    {"y":2024,"first":false,"a":"Shi, H., D. Paneru, M. Sharma, F. Mahdavi, V. Choppa, D. Goo, J. Lee, H. Ko, W. Kyun Kim.","t":"Effects of phytase, 25-hydroxyvitamin D3 and cocci vaccination on growth performance, body composition and gut integrity of broilers fed with a calcium and phosphorus-reduced diet under Eimeria spp. challenge.","v":"International Poultry Scientific Forum"},
+    {"y":2024,"first":false,"a":"Gyawali, I., M. Sharma, S. Gududoddi, D. Paneru, D. Goo, W. Kim.","t":"Assessment of Artemisia annua supplementation for mitigating Eimeria infection and improving gut health in broiler chickens.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2024,"first":false,"a":"Goo, D., A. Singh, J. Choi, M. Sharma, D. Paneru, J. Lee, W. Kim.","t":"Effects of the different ratios of branched chain amino acids (BCAAs) on growth performance, meat quality, and intestinal health in broilers fed with low and high crude protein diet.","v":"International Poultry Scientific Forum"},
+    {"y":2024,"first":false,"a":"Goo, D., J. Choi, G. Liu, J. Lee, M. Sharma, D. Paneru, V. Choppa, H. Shi, W. Kim.","t":"Dietary supplementation of valine and isoleucine have different effects on growth performance, carcass weight, and intestinal health in broiler chickens.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2024,"first":false,"a":"Sharma, M., J. Lee, G. Liu, H. Shi, H. Ko, D. Goo, D. Paneru, W. Kim.","t":"Dietary supplementation of 25-hydroxyvitamin D3 or Vitamin E partially alleviates the adverse effect of mixed Eimeria infection on the skeletal health parameters of laying hens.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2024,"first":false,"a":"Sharma, M., G. Liu, H. Shi, D. Goo, J. Lee, H. Ko, V. S. Choppa, D. Paneru, F. Mahdavi, H. Naeini, B. Marshall, W. Kim.","t":"Effects of Artemisia annua supplementation on performance and gut health of laying hens infected with Eimeria spp.","v":"International Poultry Scientific Forum"},
+    {"y":2023,"first":true,"a":"Paneru, D., M. Sharma, J. Wang, W. Kim.","t":"Effects of graded levels of Aflatoxin B1 on broiler bone quality and jejunal calcium and phosphorus transporter gene expression.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2023,"first":true,"a":"Paneru, D., M. Sharma, D. Goo, J. Choi, W. Kim.","t":"Interactive effects of feeding naturally contaminated corn distillers dried grains with solubles and Eimeria infection on egg production and gut health in laying hens.","v":"International Poultry Scientific Forum"},
+    {"y":2023,"first":false,"a":"Sharma, M., D. Paneru, W. Kim.","t":"Effects of different levels of dietary calcium on femur and keel bone mineralization of Hy-Line W-36 laying hens at post-peak production.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2023,"first":false,"a":"Goo, D., H. Shi, M. Sharma, J. Lee, G. Liu, D. Paneru, J. Choi, W. Kim.","t":"Tracking of bone mineral parameters using DEXA and MicroCT scans in two different broiler strains Cobb 500 and Ross 708 for 42 days.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2022,"first":true,"a":"Paneru, D., G. Tellez-Isaias, E. Asiamah, W. Bottje, J. Lohakare.","t":"Fenugreek (Trigonella foenum-graecum L.) seeds and Bacillus based direct-fed microbials alter the immune response and cecal microbiota in broiler chickens.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2022,"first":false,"a":"Singh, A., D. Paneru, J. Wang, W. Kim.","t":"Effects of different ratios of branched-chain amino acids on growth performance and body composition of broilers.","v":"Poultry Science Association Annual Meeting"},
+    {"y":2021,"first":true,"a":"Paneru, D., G. Tellez-Isaias, W. Bottje, J. Lohakare.","t":"Effect of different dietary levels of fenugreek seeds powder on the growth performance of broiler chickens.","v":"Poultry Science Association Annual Meeting"}
   ];
 
-  var ITALIC = ["Artemisia annua","Eimeria","Bacillus","Salmonella","Escherichia coli","Trigonella foenum-graecum","Paracoccus"];
+  /* ---------- helpers ---------- */
+  var ITALIC = ["Salmonella Typhimurium","Artemisia annua","Eimeria","Bacillus","Salmonella","Escherichia coli","Staphylococcus aureus","Hermetia illucens","Trigonella foenum-graecum","Paracoccus carotinifaciens","Paracoccus"];
   function esc(s){ return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
   function italicize(t){
     var out = esc(t);
@@ -853,18 +871,31 @@
     return out;
   }
   function boldName(a){ return esc(a).replace(/\bPaneru\b/g, "<strong>Paneru</strong>"); }
+  /* NFKD folds subscripts (D₃ → D3) so the same paper never counts twice */
   function norm(t){
-    return (t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g," ").trim();
+    return (t||"").normalize("NFKD").toLowerCase().replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g," ").trim();
   }
+  function plural(n, w){ return n + " " + w + (n === 1 ? "" : "s"); }
 
-  var journalWorks = JOURNAL.map(function(b){ return Object.assign({ doi:null, cites:null, isNew:false }, b); });
-  var confWorks = CONFERENCE.slice();
-  var liteCitations = [];
-  var filterText = "";
-  var firstOnly = false;
-  var activeTab = "journal";
+  /* ---------- state ---------- */
+  var journal = JOURNAL.map(function(b){ return Object.assign({ doi:null, cites:null, isNew:false }, b); });
+  var conf = CONFERENCE.slice();
+  var cites = [];
+  var query = "", firstOnly = false, tab = "journal";
 
-  function renderList(list, withDoiCites){
+  /* ---------- render ---------- */
+  function render(){
+    var isJ = tab === "journal";
+    var src = isJ ? journal : conf;
+    var list = src.filter(function(w){
+      if (firstOnly && !w.first) return false;
+      if (query && (w.a + " " + w.t + " " + w.v + " " + w.y).toLowerCase().indexOf(query) === -1) return false;
+      return true;
+    });
+    document.getElementById("c-journal").textContent = journal.length;
+    document.getElementById("c-conf").textContent = conf.length;
+    document.getElementById("result-count").textContent =
+      (query || firstOnly) ? "Showing " + list.length + " of " + src.length : "";
     var el = document.getElementById("pub-list");
     if (!list.length){ el.innerHTML = '<p class="empty">No results match your filter.</p>'; return; }
     var byYear = {};
@@ -874,145 +905,168 @@
     years.forEach(function(yr){
       html += '<div class="year-block"><div class="year-tag">' + yr + '</div>';
       byYear[yr].forEach(function(w){
-        var title = (withDoiCites && w.doi)
+        var title = (isJ && w.doi)
           ? '<a href="https://doi.org/' + esc(w.doi) + '" target="_blank" rel="noopener">' + italicize(w.t) + '</a>'
           : italicize(w.t);
-        html += '<div class="pub">';
-        html += '<div class="ptitle">' + title + '</div>';
-        html += '<div class="pauth">' + boldName(w.a) + '</div>';
-        html += '<div class="pmeta">';
+        html += '<article class="pub"><div class="ptitle">' + title + '</div>';
+        html += '<div class="pauth">' + boldName(w.a) + '</div><div class="pmeta">';
         html += '<span class="venue">' + esc(w.v) + (w.vp ? ' ' + esc(w.vp) : '') + '</span>';
         if (w.first) html += '<span class="chip fa">First author</span>';
-        if (withDoiCites && w.cites !== null && w.cites !== undefined) html += '<span class="chip cite">' + w.cites + ' citation' + (w.cites === 1 ? '' : 's') + '</span>';
-        if (withDoiCites && w.doi) html += '<a class="chip doi" href="https://doi.org/' + esc(w.doi) + '" target="_blank" rel="noopener">DOI ↗</a>';
-        if (withDoiCites && w.isNew) html += '<span class="chip new">New</span>';
-        html += '</div></div>';
+        if (isJ && w.cites !== null && w.cites !== undefined) html += '<span class="chip">' + plural(w.cites, "citation") + '</span>';
+        if (isJ && w.doi) html += '<a class="chip doi" href="https://doi.org/' + esc(w.doi) + '" target="_blank" rel="noopener">DOI ↗</a>';
+        if (isJ && w.isNew) html += '<span class="chip new">New</span>';
+        html += '</div></article>';
       });
       html += '</div>';
     });
     el.innerHTML = html;
   }
 
-  function render(){
-    var source = activeTab === "journal" ? journalWorks : confWorks;
-    var list = source.filter(function(w){
-      if (firstOnly && !w.first) return false;
-      if (filterText){
-        var hay = (w.a + " " + w.t + " " + w.v + " " + w.y).toLowerCase();
-        if (hay.indexOf(filterText) === -1) return false;
-      }
-      return true;
-    });
-    renderList(list, activeTab === "journal");
+  /* ---------- stats (with a gentle count-up) ---------- */
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function setNum(id, n){
+    var el = document.getElementById(id), from = parseInt((el.textContent || "0").replace(/[^0-9]/g, ""), 10) || 0;
+    if (reduce || from === n){ el.textContent = n.toLocaleString(); return; }
+    var t0 = null, dur = 900;
+    function step(ts){
+      if (t0 === null) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(from + (n - from) * e).toLocaleString();
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
   }
-
   function updateMetrics(){
-    document.getElementById("m-pubs").textContent = journalWorks.length;
-    document.getElementById("m-first").textContent = journalWorks.filter(function(w){ return w.first; }).length;
-    if (liteCitations.length){
-      var total = liteCitations.reduce(function(s,c){ return s + c; }, 0);
-      document.getElementById("m-cites").innerHTML = total.toLocaleString() + ' <span class="live-dot" title="live"></span>';
-      var sorted = liteCitations.slice().sort(function(a,b){ return b - a; });
-      var h = 0;
+    setNum("m-pubs", journal.length);
+    setNum("m-first", journal.filter(function(w){ return w.first; }).length);
+    if (cites.length){
+      setNum("m-cites", cites.reduce(function(s,c){ return s + c; }, 0));
+      var sorted = cites.slice().sort(function(a,b){ return b - a; }), h = 0;
       for (var i = 0; i < sorted.length; i++){ if (sorted[i] >= i + 1) h = i + 1; else break; }
-      document.getElementById("m-hindex").textContent = h;
+      setNum("m-hindex", h);
     }
   }
 
+  /* ---------- live sync from OpenAlex (keyed on ORCID) ---------- */
   function setSync(state, text){
-    var s = document.getElementById("sync");
-    s.className = "sync " + state;
+    document.getElementById("sync").className = "sync " + state;
     document.getElementById("sync-text").textContent = text;
   }
-
   function syncOpenAlex(){
     var url = "https://api.openalex.org/works?filter=author.orcid:" + ORCID +
-              "&per-page=200&sort=publication_date:desc" +
-              "&select=id,doi,title,publication_year,cited_by_count,primary_location,authorships,type" +
-              "&mailto=dpaneru@uga.edu";
-    var ctrl = new AbortController();
-    var timer = setTimeout(function(){ ctrl.abort(); }, 9000);
-
+      "&per-page=200&sort=publication_date:desc" +
+      "&select=id,doi,title,publication_year,cited_by_count,primary_location,authorships,type&mailto=dpaneru@uga.edu";
+    var ctrl = new AbortController(), timer = setTimeout(function(){ ctrl.abort(); }, 9000);
     fetch(url, { signal: ctrl.signal })
       .then(function(r){ if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
       .then(function(data){
         clearTimeout(timer);
         var results = (data && data.results) || [];
-        var baseMap = {};
-        journalWorks.forEach(function(w){ baseMap[norm(w.t)] = w; });
-
-        var skip = { "paratext":1, "erratum":1, "editorial":1, "letter":1, "grant":1 };
-        liteCitations = [];
-
+        var byTitle = {}, byDoi = {};
+        journal.forEach(function(w){ byTitle[norm(w.t)] = w; });
+        var skipType = { paratext:1, erratum:1, editorial:1, letter:1, grant:1, preprint:1 };
+        cites = [];
         results.forEach(function(w){
-          if (!w.title || w.type && skip[w.type]) return;
-          liteCitations.push(w.cited_by_count || 0);
-          var key = norm(w.title);
-          var doi = w.doi ? w.doi.replace(/^https?:\/\/doi\.org\//, "") : null;
           var venue = (w.primary_location && w.primary_location.source && w.primary_location.source.display_name) || "";
-          var match = baseMap[key];
+          /* preprints (e.g. SSRN) duplicate a published paper — skip them */
+          if (!w.title || skipType[w.type] || /ssrn|preprint|research square|biorxiv/i.test(venue)) return;
+          var key = norm(w.title), doi = w.doi ? w.doi.replace(/^https?:\/\/doi\.org\//, "") : null;
+          var match = byTitle[key] || (doi && byDoi[doi]);
           if (match){
-            match.doi = doi || match.doi;
-            match.cites = w.cited_by_count;
+            if (match.cited) return;            /* already counted this paper */
+            match.cited = true;
+            match.doi = doi || match.doi; match.cites = w.cited_by_count;
             if (venue && !match.v) match.v = venue;
+            cites.push(w.cited_by_count || 0);
+            if (doi) byDoi[doi] = match;
           } else {
-            var authors = (w.authorships || []).map(function(au){ return au.author && au.author.display_name; }).filter(Boolean).join(", ");
-            var isFirst = (w.authorships && w.authorships[0] && w.authorships[0].author && /paneru/i.test(w.authorships[0].author.display_name)) || false;
-            var nw = { y: w.publication_year || 0, first: isFirst, a: authors + ".", t: w.title, v: venue, vp: "", doi: doi, cites: w.cited_by_count, isNew: true };
-            journalWorks.push(nw);
-            baseMap[key] = nw;
+            var au = w.authorships || [];
+            var nw = {
+              y: w.publication_year || 0,
+              first: !!(au[0] && au[0].author && /paneru/i.test(au[0].author.display_name)),
+              a: au.map(function(x){ return x.author && x.author.display_name; }).filter(Boolean).join(", ") + ".",
+              t: w.title, v: venue, vp: "", doi: doi, cites: w.cited_by_count, isNew: true, cited: true
+            };
+            journal.push(nw); byTitle[key] = nw; if (doi) byDoi[doi] = nw;
+            cites.push(w.cited_by_count || 0);
           }
         });
-
-        updateMetrics();
-        render();
+        updateMetrics(); render();
         var d = new Date();
-        var mon = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getMonth()];
-        setSync("ok", "Updated " + mon + " " + d.getFullYear());
+        setSync("ok", "Updated " + ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getMonth()] + " " + d.getFullYear());
       })
-      .catch(function(){
-        clearTimeout(timer);
-        setSync("fail", "Live sync unavailable — showing curated list");
-      });
+      .catch(function(){ clearTimeout(timer); setSync("fail", "Live sync unavailable — showing curated list"); });
   }
 
-  document.getElementById("search").addEventListener("input", function(e){
-    filterText = e.target.value.trim().toLowerCase();
-    render();
-  });
+  /* ---------- events ---------- */
+  document.getElementById("search").addEventListener("input", function(e){ query = e.target.value.trim().toLowerCase(); render(); });
   document.getElementById("fa-toggle").addEventListener("click", function(){
-    firstOnly = !firstOnly;
-    this.classList.toggle("on", firstOnly);
-    this.setAttribute("aria-pressed", firstOnly ? "true" : "false");
-    render();
+    firstOnly = !firstOnly; this.classList.toggle("on", firstOnly); this.setAttribute("aria-pressed", firstOnly ? "true" : "false"); render();
   });
-  var tabJournal = document.getElementById("tab-journal");
-  var tabConf = document.getElementById("tab-conf");
-  function setTab(tab){
-    activeTab = tab;
-    tabJournal.classList.toggle("on", tab === "journal");
-    tabJournal.setAttribute("aria-pressed", tab === "journal" ? "true" : "false");
-    tabConf.classList.toggle("on", tab === "conference");
-    tabConf.setAttribute("aria-pressed", tab === "conference" ? "true" : "false");
+  var tJ = document.getElementById("tab-journal"), tC = document.getElementById("tab-conf");
+  function setTab(t){
+    tab = t;
+    tJ.classList.toggle("on", t === "journal"); tJ.setAttribute("aria-selected", t === "journal" ? "true" : "false");
+    tC.classList.toggle("on", t === "conf"); tC.setAttribute("aria-selected", t === "conf" ? "true" : "false");
     render();
   }
-  tabJournal.addEventListener("click", function(){ setTab("journal"); });
-  tabConf.addEventListener("click", function(){ setTab("conference"); });
+  tJ.addEventListener("click", function(){ setTab("journal"); });
+  tC.addEventListener("click", function(){ setTab("conf"); });
 
+  /* nav shadow on scroll */
+  var nav = document.getElementById("nav");
+  function onScroll(){ nav.classList.toggle("scrolled", window.scrollY > 8); }
+  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+  /* reveal on scroll */
+  var revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window){
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
-    }, { threshold: 0.12 });
-    document.querySelectorAll(".reveal").forEach(function(n){ io.observe(n); });
-  } else {
-    document.querySelectorAll(".reveal").forEach(function(n){ n.classList.add("in"); });
+    }, { threshold: 0.1 });
+    revealEls.forEach(function(n){ io.observe(n); });
+  } else { revealEls.forEach(function(n){ n.classList.add("in"); }); }
+
+  /* scrollspy: highlight the section in view (desktop nav + mobile tab bar) */
+  if ("IntersectionObserver" in window){
+    var links = document.querySelectorAll('.nav-links a[href^="#"], .tabbar a[href^="#"]');
+    var map = {};
+    links.forEach(function(a){ (map[a.getAttribute("href").slice(1)] = map[a.getAttribute("href").slice(1)] || []).push(a); });
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (!en.isIntersecting) return;
+        links.forEach(function(a){ a.removeAttribute("aria-current"); });
+        (map[en.target.id] || []).forEach(function(a){ a.setAttribute("aria-current", "true"); });
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    Object.keys(map).forEach(function(id){ var s = document.getElementById(id); if (s) spy.observe(s); });
+    /* the 'experience' tab covers expertise too, 'research' covers its band */
+    ["expertise"].forEach(function(id){ var s = document.getElementById(id); if (s) spy.observe(s); });
   }
+
+  /* "last updated": newest commit on the site's repo (falls back to the date baked in at publish) */
+  (function(){
+    var els = document.querySelectorAll(".last-updated");
+    if (!els.length || !window.fetch) return;
+    var ctrl = new AbortController(), timer = setTimeout(function(){ ctrl.abort(); }, 6000);
+    fetch("https://api.github.com/repos/deependrapaneru/deependrapaneru.github.io/commits?per_page=1", { signal: ctrl.signal })
+      .then(function(r){ if (!r.ok) throw 0; return r.json(); })
+      .then(function(c){
+        clearTimeout(timer);
+        var iso = c && c[0] && c[0].commit && c[0].commit.committer && c[0].commit.committer.date;
+        if (!iso) return;
+        var d = new Date(iso);
+        els.forEach(function(el){
+          el.setAttribute("datetime", iso);
+          el.textContent = d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+        });
+      })
+      .catch(function(){ clearTimeout(timer); });
+  })();
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  render();
-  updateMetrics();
-  syncOpenAlex();
+  render(); updateMetrics(); syncOpenAlex();
 })();
 </script>
 
